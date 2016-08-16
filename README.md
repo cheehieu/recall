@@ -20,7 +20,7 @@ The goals of this design were:
 ## Discrete
 * Discrete LED flasher circuit with passive components
 ** LM3909 equivalent
-* Coin cell battery, CR2032 is most cost effective for the capacity
+* Coin cell battery, CR2032 is most cost effective for the capacity, CR2450 (600 mAh), CR2477 (1000 mAh)
 * Diffuse push button mechanical switch
 * Current shunt for power measurement
 
