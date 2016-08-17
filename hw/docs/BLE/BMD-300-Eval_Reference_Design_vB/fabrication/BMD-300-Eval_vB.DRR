@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: BMD-300-Eval.PcbDoc   4/22/2016  1:47:37 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : BMD-300-Eval_vB-RoundHoles.TXT
+ASCII SlotHoles File : BMD-300-Eval_vB-SlotHoles.TXT
+EIA File   : BMD-300-Eval_vB.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             464       PTH        59.97inch (1523.13mm)
+T2      28mil (0.7mm)                                             Slot              2         PTH        0.60inch (15.28mm)
+T3      39mil (1mm)                                               Round             3         PTH        0.38inch (9.72mm)
+T4      40mil (1.016mm)                                           Round             2         PTH        0.10inch (2.54mm)
+T5      126mil (3.2mm)                                            Round             4         NPTH       6.05inch (153.63mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              475
+
+Total Processing Time (hh:mm:ss) : 00:00:01
