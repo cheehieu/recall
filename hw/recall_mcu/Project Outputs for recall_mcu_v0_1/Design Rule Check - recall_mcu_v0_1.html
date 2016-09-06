@@ -1,0 +1,409 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD16\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9/6/2016</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:25:56 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc" class="file"><acronym title="C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc">C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">23</td></tr>
+</table>
+</td>
+</table><a name="IDAP0GL44MEQDUBOI5IAEGMMEM2HBBWAVOGXGRUMI1QM2RAZ4QFOIL"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPF4RXXC42SLAFHOGUJJKAMAZBHK3WOLHIRWTBXXU5SKC0K2OXIH">Minimum Annular Ring (Minimum=7mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDESBG22ESDCMCJNFLZ2KLAJXBZFR4KY42VXT2DIBMPRQHQKRGOJTP">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNF1AXF1UNT4JLAVXXM1B0UERNCZX3CULIG4PGQJVGOD50SXBOKZP">Room recall_mcu_v0_1 (Bounding Region = (1895mil, 2930mil, 8685mil, 7625mil) (InComponentClass('recall_mcu_v0_1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGTCTUOE1IIK4OEAFYC3H53KRKGZRJWFGARZYXOEMBUM11KYRJ1IF">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPANAF054LIO2GIZYHC0QP1S5QJFY0TRUFAAFTOHWNFXMDHEHHHEB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNJOJMSZITRKJGKPZMGER0BKU0XSJBGTBBQE5EEG0JTSR5TMZLGB">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOCC2BRYCVD4QCCWY0BIJ4IVSEOW405VYW443VNNU3UB5C0YWAW2C">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCXXEHUKY1G0OL0YVDGZDZYVPIDH20X5PSXLSXHOJVDGIGPHXVCCF">Width Constraint (Min=6mil) (Max=50mil) (Preferred=6mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXTR0UDHMJ3QONHT1FBMHCQRISE5TGPRFDDM5SEBTIQEADN0GHVVB">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEWHW51JT24EZK2ZBBHHUWBK5RHLG5D44UYV1WT4TD3NZGQRLPRP">Hole Size Constraint (Min=13mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZN1PNBV05AM5FSQ1LB02RTZANJZFIRTIMNZKVTI0FCOQZ2VY1XOC">Hole To Hole Clearance (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPLC3IP5VZTDGD2QYEETR4YT2COZTSWNRAWSYNDPDOZ1AZV5DOP3H">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWUQHFNQQRDKGKTCDH1TPBNPMDDNY0C1XZSSGJDN25BKYCXCZFVQL">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZRSH1VPYZ4E1F0WROFCTMMIXTP0BIEWIQBLOHKMJ5DC1IYPNCBAP">Silk to Silk (Clearance=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOQUR0FYXVH5PENRMC2HEZF4L2IL2YGH5WCO15EISMNUDVAOYRLQI">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">23</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW4W5LVJLZIHQGA41DRRPZ1SWQHKNJAZORQV3HKLAIWKE01YQQNIO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">23</td>
+</tr>
+</table><br><a name="IDOQUR0FYXVH5PENRMC2HEZF4L2IL2YGH5WCO15EISMNUDVAOYRLQI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5120.895mil|Location2.X=5150.742mil|Location1.Y=5023.115mil|Location2.Y=5067.636mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5120.895mil|Location2.X=5150.742mil|Location1.Y=5023.115mil|Location2.Y=5067.636mil|Absolute=True">Net Antennae: Track (132.27mil,34.49mil)(189.32mil,49.78mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5125.885mil|Location2.X=5155.732mil|Location1.Y=5067.175mil|Location2.Y=5111.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5125.885mil|Location2.X=5155.732mil|Location1.Y=5067.175mil|Location2.Y=5111.696mil|Absolute=True">Net Antennae: Track (91.23mil,51.98mil)(137.26mil,78.55mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.235mil|Location2.X=5115.082mil|Location1.Y=5084.885mil|Location2.Y=5129.406mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.235mil|Location2.X=5115.082mil|Location1.Y=5084.885mil|Location2.Y=5129.406mil|Absolute=True">Net Antennae: Track (96.61mil,96.26mil)(138.37mil,138.02mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5067.525mil|Location2.X=5097.372mil|Location1.Y=5125.535mil|Location2.Y=5170.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5067.525mil|Location2.X=5097.372mil|Location1.Y=5125.535mil|Location2.Y=5170.056mil|Absolute=True">Net Antennae: Track (52.32mil,90.88mil)(78.9mil,136.91mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5023.465mil|Location2.X=5053.312mil|Location1.Y=5120.555mil|Location2.Y=5165.076mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5023.465mil|Location2.X=5053.312mil|Location1.Y=5120.555mil|Location2.Y=5165.076mil|Absolute=True">Net Antennae: Track (34.84mil,131.93mil)(50.12mil,188.97mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.795mil|Location2.X=5017.642mil|Location1.Y=5146.905mil|Location2.Y=5191.426mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.795mil|Location2.X=5017.642mil|Location1.Y=5146.905mil|Location2.Y=5191.426mil|Absolute=True">Net Antennae: Track (-0.83mil,105.13mil)(-0.83mil,158.28mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4952.135mil|Location2.X=4981.982mil|Location1.Y=5120.555mil|Location2.Y=5165.076mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4952.135mil|Location2.X=4981.982mil|Location1.Y=5120.555mil|Location2.Y=5165.076mil|Absolute=True">Net Antennae: Track (-51.78mil,188.97mil)(-36.49mil,131.93mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4908.075mil|Location2.X=4937.922mil|Location1.Y=5125.535mil|Location2.Y=5170.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4908.075mil|Location2.X=4937.922mil|Location1.Y=5125.535mil|Location2.Y=5170.056mil|Absolute=True">Net Antennae: Track (-80.55mil,136.91mil)(-53.98mil,90.88mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4890.365mil|Location2.X=4920.212mil|Location1.Y=5084.885mil|Location2.Y=5129.406mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4890.365mil|Location2.X=4920.212mil|Location1.Y=5084.885mil|Location2.Y=5129.406mil|Absolute=True">Net Antennae: Track (-140.02mil,138.02mil)(-98.26mil,96.26mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4849.715mil|Location2.X=4879.562mil|Location1.Y=5067.175mil|Location2.Y=5111.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4849.715mil|Location2.X=4879.562mil|Location1.Y=5067.175mil|Location2.Y=5111.696mil|Absolute=True">Net Antennae: Track (-138.91mil,78.55mil)(-92.88mil,51.98mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4854.695mil|Location2.X=4884.542mil|Location1.Y=5023.115mil|Location2.Y=5067.636mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4854.695mil|Location2.X=4884.542mil|Location1.Y=5023.115mil|Location2.Y=5067.636mil|Absolute=True">Net Antennae: Track (-190.97mil,49.78mil)(-133.93mil,34.49mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4828.345mil|Location2.X=4858.192mil|Location1.Y=4987.455mil|Location2.Y=5031.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4828.345mil|Location2.X=4858.192mil|Location1.Y=4987.455mil|Location2.Y=5031.976mil|Absolute=True">Net Antennae: Track (-160.28mil,-1.17mil)(-107.13mil,-1.17mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4854.695mil|Location2.X=4884.542mil|Location1.Y=4951.785mil|Location2.Y=4996.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4854.695mil|Location2.X=4884.542mil|Location1.Y=4951.785mil|Location2.Y=4996.306mil|Absolute=True">Net Antennae: Track (-190.97mil,-52.12mil)(-133.93mil,-36.84mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4849.715mil|Location2.X=4879.562mil|Location1.Y=4907.725mil|Location2.Y=4952.246mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4849.715mil|Location2.X=4879.562mil|Location1.Y=4907.725mil|Location2.Y=4952.246mil|Absolute=True">Net Antennae: Track (-138.91mil,-80.9mil)(-92.88mil,-54.32mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4890.365mil|Location2.X=4920.212mil|Location1.Y=4890.015mil|Location2.Y=4934.536mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4890.365mil|Location2.X=4920.212mil|Location1.Y=4890.015mil|Location2.Y=4934.536mil|Absolute=True">Net Antennae: Track (-140.02mil,-140.37mil)(-98.26mil,-98.61mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4908.075mil|Location2.X=4937.922mil|Location1.Y=4849.365mil|Location2.Y=4893.886mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4908.075mil|Location2.X=4937.922mil|Location1.Y=4849.365mil|Location2.Y=4893.886mil|Absolute=True">Net Antennae: Track (-80.55mil,-139.26mil)(-53.98mil,-93.23mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4952.135mil|Location2.X=4981.982mil|Location1.Y=4854.355mil|Location2.Y=4898.876mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4952.135mil|Location2.X=4981.982mil|Location1.Y=4854.355mil|Location2.Y=4898.876mil|Absolute=True">Net Antennae: Track (-51.78mil,-191.32mil)(-36.49mil,-134.27mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.795mil|Location2.X=5017.642mil|Location1.Y=4828.005mil|Location2.Y=4872.526mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.795mil|Location2.X=5017.642mil|Location1.Y=4828.005mil|Location2.Y=4872.526mil|Absolute=True">Net Antennae: Track (-0.83mil,-160.62mil)(-0.83mil,-107.47mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5023.465mil|Location2.X=5053.312mil|Location1.Y=4854.355mil|Location2.Y=4898.876mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5023.465mil|Location2.X=5053.312mil|Location1.Y=4854.355mil|Location2.Y=4898.876mil|Absolute=True">Net Antennae: Track (34.84mil,-134.27mil)(50.12mil,-191.32mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5067.525mil|Location2.X=5097.372mil|Location1.Y=4849.365mil|Location2.Y=4893.886mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5067.525mil|Location2.X=5097.372mil|Location1.Y=4849.365mil|Location2.Y=4893.886mil|Absolute=True">Net Antennae: Track (52.32mil,-93.23mil)(78.9mil,-139.26mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.235mil|Location2.X=5115.082mil|Location1.Y=4890.015mil|Location2.Y=4934.536mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.235mil|Location2.X=5115.082mil|Location1.Y=4890.015mil|Location2.Y=4934.536mil|Absolute=True">Net Antennae: Track (96.61mil,-98.61mil)(138.37mil,-140.37mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5125.885mil|Location2.X=5155.732mil|Location1.Y=4907.725mil|Location2.Y=4952.246mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5125.885mil|Location2.X=5155.732mil|Location1.Y=4907.725mil|Location2.Y=4952.246mil|Absolute=True">Net Antennae: Track (91.23mil,-54.32mil)(137.26mil,-80.9mil) on Component Side </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5120.895mil|Location2.X=5150.742mil|Location1.Y=4951.785mil|Location2.Y=4996.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5120.895mil|Location2.X=5150.742mil|Location1.Y=4951.785mil|Location2.Y=4996.306mil|Absolute=True">Net Antennae: Track (132.27mil,-36.84mil)(189.32mil,-52.12mil) on Component Side </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,60 @@
+Added Component: Designator=BAT(BAT-HLD-001)
+Added Component: Designator=C1(CAP_0402R)
+Added Component: Designator=C2(CAP_0402R)
+Added Component: Designator=D1(MP2016)
+Added Component: Designator=ICSP(HDR1X5_ICSP)
+Added Component: Designator=R1(RES_0402)
+Added Component: Designator=R2(RES_0402)
+Added Component: Designator=R3(RES_0402)
+Added Component: Designator=Rsh(RES_0402)
+Added Component: Designator=SW(TRELLIS_1x1)
+Added Component: Designator=TP1(TESTPOINT)
+Added Component: Designator=TP2(TESTPOINT)
+Added Component: Designator=U1(SOT-23-6)
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Pin To Net: NetName=GND Pin=BAT-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=GND Pin=D1-C
+Added Pin To Net: NetName=GND Pin=D1-C
+Added Pin To Net: NetName=VPP Pin=ICSP-1
+Added Pin To Net: NetName=VDD Pin=ICSP-2
+Added Pin To Net: NetName=GND Pin=ICSP-3
+Added Pin To Net: NetName=ICSP_DAT Pin=ICSP-4
+Added Pin To Net: NetName=ICSP_CLK Pin=ICSP-5
+Added Pin To Net: NetName=VPP Pin=R1-1
+Added Pin To Net: NetName=VDD Pin=R1-2
+Added Pin To Net: NetName=NetC2_2 Pin=R2-1
+Added Pin To Net: NetName=VPP Pin=R2-2
+Added Pin To Net: NetName=NetD1_A Pin=R3-1
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=VDD Pin=Rsh-1
+Added Pin To Net: NetName=NetC1_2 Pin=Rsh-2
+Added Pin To Net: NetName=NetC2_2 Pin=SW-1
+Added Pin To Net: NetName=GND Pin=SW-2
+Added Pin To Net: NetName=NetD1_A Pin=TP1-1
+Added Pin To Net: NetName=GND Pin=TP2-1
+Added Pin To Net: NetName=ICSP_DAT Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=ICSP_CLK Pin=U1-3
+Added Pin To Net: NetName=NetR3_2 Pin=U1-4
+Added Pin To Net: NetName=NetC1_2 Pin=U1-5
+Added Pin To Net: NetName=VPP Pin=U1-6
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component BAT CR2032
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component C1 CAP
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component C2 CAP
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component D1 MP2016
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component ICSP Header 5
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component R1 RES
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component R2 RES
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component R3 RES
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component Rsh RES
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component SW SW-PB
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component TP1 TP
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component TP2 TP
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component U1 PIC10F320

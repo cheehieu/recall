@@ -1,0 +1,5 @@
+Added Component: Designator=BAT2(BAT-HLD-001)
+Added Pin To Net: NetName=VDD Pin=BAT2-1
+Added Pin To Net: NetName=VDD Pin=BAT2-1
+Added Pin To Net: NetName=GND Pin=BAT2-2
+Added Member To Class: ClassName=recall_discrete_v0_1 Member=Component BAT2 CR2032

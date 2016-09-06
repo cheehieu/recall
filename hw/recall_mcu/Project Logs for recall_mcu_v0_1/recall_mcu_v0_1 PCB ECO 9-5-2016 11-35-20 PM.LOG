@@ -1,0 +1,4 @@
+Added Component: Designator=SW(TRELLIS_1x1)
+Added Pin To Net: NetName=NetC2_2 Pin=SW-1
+Added Pin To Net: NetName=GND Pin=SW-2
+Added Member To Class: ClassName=recall_mcu_v0_1 Member=Component SW SW-PB

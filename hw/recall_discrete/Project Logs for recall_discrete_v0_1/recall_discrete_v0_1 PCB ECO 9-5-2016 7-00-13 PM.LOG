@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=C1 Old Footprint=0402 New Footprint=CAP_0402R
+Change Component Footprint: Designator=C2 Old Footprint=0402 New Footprint=CAP_0402R
+Change Component Footprint: Designator=C3 Old Footprint=0402 New Footprint=CAP_0402R
+Change Component Footprint: Designator=R1 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=R2 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=R3 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=R4 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=R6 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=R7 Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=Rsh Old Footprint=RES_0402 New Footprint=0402
+Change Component Footprint: Designator=Q1 Old Footprint=SOT-23 New Footprint=TO-92A
+Change Component Footprint: Designator=Q2 Old Footprint=SOT-23 New Footprint=TO-92A
+Change Component Comment : Designator=LED Old Comment=MP2016 New Comment=LED

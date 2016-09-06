@@ -1,0 +1,7 @@
+Added Component: Designator=BAT(BAT-2)
+Added Pin To Net: NetName=GND Pin=BAT-2
+Added Net: Name=GND
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Net: Name=VDD
+Added Class: Name=recall_discrete_v0_1
+Added Room: Name=recall_discrete_v0_1
