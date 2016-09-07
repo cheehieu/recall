@@ -1,0 +1,79 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_2L_v0_1.PcbDoc
+Date     : 9/7/2016
+Time     : 10:56:59 AM
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (-49.78mil,189.32mil)(-34.49mil,132.27mil) on Component Side 
+   Violation between Net Antennae: Track (-78.55mil,137.26mil)(-51.98mil,91.23mil) on Component Side 
+   Violation between Net Antennae: Track (-138.02mil,138.37mil)(-96.26mil,96.61mil) on Component Side 
+   Violation between Net Antennae: Track (-136.91mil,78.9mil)(-90.88mil,52.32mil) on Component Side 
+   Violation between Net Antennae: Track (-188.97mil,50.12mil)(-131.93mil,34.84mil) on Component Side 
+   Violation between Net Antennae: Track (-158.28mil,-0.83mil)(-105.13mil,-0.83mil) on Component Side 
+   Violation between Net Antennae: Track (-188.97mil,-51.78mil)(-131.93mil,-36.49mil) on Component Side 
+   Violation between Net Antennae: Track (-136.91mil,-80.55mil)(-90.88mil,-53.98mil) on Component Side 
+   Violation between Net Antennae: Track (-138.02mil,-140.02mil)(-96.26mil,-98.26mil) on Component Side 
+   Violation between Net Antennae: Track (-78.55mil,-138.91mil)(-51.98mil,-92.88mil) on Component Side 
+   Violation between Net Antennae: Track (-49.78mil,-190.97mil)(-34.49mil,-133.93mil) on Component Side 
+   Violation between Net Antennae: Track (1.17mil,-160.28mil)(1.17mil,-107.13mil) on Component Side 
+   Violation between Net Antennae: Track (36.84mil,-133.93mil)(52.12mil,-190.97mil) on Component Side 
+   Violation between Net Antennae: Track (54.32mil,-92.88mil)(80.9mil,-138.91mil) on Component Side 
+   Violation between Net Antennae: Track (98.61mil,-98.26mil)(140.37mil,-140.02mil) on Component Side 
+   Violation between Net Antennae: Track (93.23mil,-53.98mil)(139.26mil,-80.55mil) on Component Side 
+   Violation between Net Antennae: Track (134.27mil,-36.49mil)(191.32mil,-51.78mil) on Component Side 
+   Violation between Net Antennae: Track (107.47mil,-0.83mil)(160.62mil,-0.83mil) on Component Side 
+   Violation between Net Antennae: Track (134.27mil,34.84mil)(191.32mil,50.12mil) on Component Side 
+   Violation between Net Antennae: Track (93.23mil,52.32mil)(139.26mil,78.9mil) on Component Side 
+   Violation between Net Antennae: Track (98.61mil,96.61mil)(140.37mil,138.37mil) on Component Side 
+   Violation between Net Antennae: Track (54.32mil,91.23mil)(80.9mil,137.26mil) on Component Side 
+   Violation between Net Antennae: Track (36.84mil,132.27mil)(52.12mil,189.32mil) on Component Side 
+Rule Violations :23
+
+Processing Rule : Silk to Silk (Clearance=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=13mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=50mil) (Preferred=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Room recall_mcu_2L_v0_1 (Bounding Region = (1895mil, 2930mil, 8685mil, 7625mil) (InComponentClass('recall_mcu_2L_v0_1'))
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 23
+Time Elapsed        : 00:00:01

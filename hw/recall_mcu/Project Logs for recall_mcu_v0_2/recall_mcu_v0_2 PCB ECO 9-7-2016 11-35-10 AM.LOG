@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=NetD1_A Pin=R3-1
+Removed Pin From Net: NetName=NetR3_2 Pin=R3-2
+Change Component Footprint: Designator=SW Old Footprint=TRELLIS_1x1_2L New Footprint=4-1437565-1
+Change Component Comment : Designator=SW Old Comment=SW-PB New Comment=4-1437565-1
+Added Component: Designator=D2(MP2016)
+Added Component: Designator=R4(RES_0402)
+Added Pin To Net: NetName=GND Pin=D2-C
+Added Pin To Net: NetName=GND Pin=D2-C
+Added Pin To Net: NetName=NetR3_2 Pin=R3-1
+Added Pin To Net: NetName=NetD1_A Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=R4-1
+Change Net Name : Old Net Name=NetR3_2 New Net Name=NetR3_1
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=R4-2
+Added Net: Name=NetD2_A
+Change Class Name : Old Net Name=recall_mcu_2L_v0_1 New Net Name=recall_mcu_v0_2
+Added Member To Class: ClassName=recall_mcu_v0_2 Member=Component D2 MP2016
+Added Member To Class: ClassName=recall_mcu_v0_2 Member=Component R4 RES
+Change Room Name: Old Name=recall_mcu_2L_v0_1 New Name=recall_mcu_v0_2
+Change Room Scope: Old Scope=InComponentClass('recall_mcu_2L_v0_1') New Scope=InComponentClass('recall_mcu_v0_2')

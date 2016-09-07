@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=NetC1_2 Pin=ICSP-2
+Added Pin To Net: NetName=NetC1_2 Pin=R1-2
+Change Net Name : Old Net Name=NetC1_2 New Net Name=VDD
+Added Pin To Net: NetName=VBAT Pin=BAT-1
+Added Pin To Net: NetName=VBAT Pin=BAT-1
+Added Pin To Net: NetName=VBAT Pin=BAT-1
+Added Pin To Net: NetName=VBAT Pin=BAT-1
+Added Pin To Net: NetName=VBAT Pin=Rsh-1
+Added Net: Name=VBAT

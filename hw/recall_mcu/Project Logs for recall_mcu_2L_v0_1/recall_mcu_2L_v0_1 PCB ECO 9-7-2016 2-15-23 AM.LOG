@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=SW Old Footprint=TRELLIS_1x1 New Footprint=TRELLIS_1x1_2L
+Change Class Name : Old Net Name=recall_mcu_v0_1 New Net Name=recall_mcu_2L_v0_1
+Change Room Name: Old Name=recall_mcu_v0_1 New Name=recall_mcu_2L_v0_1
+Change Room Scope: Old Scope=InComponentClass('recall_mcu_v0_1') New Scope=InComponentClass('recall_mcu_2L_v0_1')

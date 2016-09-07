@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [recall_mcu_2L_v0_1.PrjPcb]
+   Generated File[recall_mcu_2L_v0_1.GTL]
+   Generated File[recall_mcu_2L_v0_1.GBL]
+   Generated File[recall_mcu_2L_v0_1.GTO]
+   Generated File[recall_mcu_2L_v0_1.GTP]
+   Generated File[recall_mcu_2L_v0_1.GTS]
+   Generated File[recall_mcu_2L_v0_1.GBS]
+   Generated File[recall_mcu_2L_v0_1.GBP]
+   Generated File[recall_mcu_2L_v0_1.GBO]
+   Generated File[recall_mcu_2L_v0_1.GKO]
+   Generated File[recall_mcu_2L_v0_1.RUL]
+   Generated File[recall_mcu_2L_v0_1.EXTREP]
+   Generated File[recall_mcu_2L_v0_1.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 11:19:41 AM On 9/7/2016
