@@ -1,0 +1,4 @@
+Added Component: Designator=D1(MP2016_centered)
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=GND Pin=D1-C
+Added Member To Class: ClassName=recall_mcu_2L_v0_1 Member=Component D1 MP2016
