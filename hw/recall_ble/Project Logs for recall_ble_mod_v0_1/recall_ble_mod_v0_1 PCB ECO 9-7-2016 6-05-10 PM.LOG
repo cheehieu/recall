@@ -1,0 +1,101 @@
+Removed Pin From Net: NetName=GND Pin=D1-C
+Removed Pin From Net: NetName=NetD1_A Pin=D1-
+Removed Pin From Net: NetName=GND Pin=D1-
+Removed Pin From Net: NetName=GND Pin=D2-C
+Removed Pin From Net: NetName=NetD2_A Pin=D2-
+Removed Pin From Net: NetName=GND Pin=D2-
+Removed Pin From Net: NetName=VDD Pin=ICSP-2
+Removed Pin From Net: NetName=GND Pin=ICSP-3
+Removed Pin From Net: NetName=VDD Pin=R1-2
+Removed Pin From Net: NetName=GND Pin=U1-2
+Removed Pin From Net: NetName=VDD Pin=U1-5
+Removed Member From Class: ClassName=recall_mcu_v0_2 Member=ICSP
+Change Component Footprint: Designator=C1 Old Footprint=CAP_0402R New Footprint=CAP_0603R
+Change Component Footprint: Designator=U1 Old Footprint=SOT-23-6 New Footprint=sot-553
+Change Component Comment : Designator=U1 Old Comment=PIC10F320 New Comment=AH1892
+Change Component Designator: OldDesignator=C2 NewDesignator=C5
+Change Component Designator: OldDesignator=R2 NewDesignator=R3
+Change Component Designator: OldDesignator=R3 NewDesignator=R1
+Change Component Designator: OldDesignator=R4 NewDesignator=R2
+Change Component Designator: OldDesignator=SW NewDesignator=SW1
+Added Component: Designator=BLE(BMD-300)
+Added Component: Designator=C2(CAP_0402R)
+Added Component: Designator=C3(CAP_0402R)
+Added Component: Designator=C4(CAP_0402R)
+Added Component: Designator=C6(CAP_0402R)
+Added Component: Designator=R4(RES_0402)
+Added Component: Designator=SW2(4-1437565-1)
+Added Component: Designator=SWD(HDR1X4_SWD)
+Added Component: Designator=XTAL(ABS07)
+Added Pin To Net: NetName=GND Pin=BLE-1
+Added Pin To Net: NetName=GND Pin=BLE-2
+Added Pin To Net: NetName=GND Pin=BLE-3
+Added Pin To Net: NetName=GND Pin=BLE-4
+Added Pin To Net: NetName=GND Pin=BLE-5
+Added Pin To Net: NetName=GND Pin=BLE-16
+Added Pin To Net: NetName=VDD Pin=BLE-17
+Added Pin To Net: NetName=GND Pin=BLE-18
+Added Pin To Net: NetName=GND Pin=BLE-29
+Added Pin To Net: NetName=GND Pin=BLE-30
+Added Pin To Net: NetName=GND Pin=BLE-45
+Added Pin To Net: NetName=GND Pin=BLE-46
+Added Pin To Net: NetName=GND Pin=BLE-47
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=VDD Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VDD Pin=R1-1
+Added Pin To Net: NetName=VDD Pin=R2-1
+Added Pin To Net: NetName=GND Pin=SW2-2
+Added Pin To Net: NetName=GND Pin=SW2-2
+Added Pin To Net: NetName=VDD Pin=SWD-1
+Added Pin To Net: NetName=GND Pin=SWD-4
+Added Pin To Net: NetName=VDD Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-4
+Change Net Name : Old Net Name=NetC2_2 New Net Name=NetC5_2
+Added Pin To Net: NetName=D1_CTRL Pin=BLE-21
+Added Pin To Net: NetName=D1_CTRL Pin=D1-C
+Added Net: Name=D1_CTRL
+Added Pin To Net: NetName=D2_CTRL Pin=BLE-23
+Added Pin To Net: NetName=D2_CTRL Pin=D2-C
+Added Net: Name=D2_CTRL
+Added Pin To Net: NetName=MAG_OUTN Pin=BLE-27
+Added Pin To Net: NetName=MAG_OUTN Pin=U1-5
+Added Net: Name=MAG_OUTN
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=R4-1
+Added Pin To Net: NetName=NetC6_2 Pin=SW2-1
+Added Pin To Net: NetName=NetC6_2 Pin=SW2-1
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=SW_BGN Pin=BLE-28
+Added Pin To Net: NetName=SW_BGN Pin=R4-2
+Added Net: Name=SW_BGN
+Added Pin To Net: NetName=SW_PBN Pin=BLE-31
+Added Pin To Net: NetName=SW_PBN Pin=R3-2
+Added Net: Name=SW_PBN
+Added Pin To Net: NetName=SWDCLK Pin=BLE-43
+Added Pin To Net: NetName=SWDCLK Pin=SWD-2
+Added Net: Name=SWDCLK
+Added Pin To Net: NetName=SWDIO Pin=BLE-44
+Added Pin To Net: NetName=SWDIO Pin=SWD-3
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=XTAL1 Pin=BLE-13
+Added Pin To Net: NetName=XTAL1 Pin=C2-2
+Added Pin To Net: NetName=XTAL1 Pin=XTAL-1
+Added Net: Name=XTAL1
+Added Pin To Net: NetName=XTAL2 Pin=BLE-14
+Added Pin To Net: NetName=XTAL2 Pin=C3-2
+Added Pin To Net: NetName=XTAL2 Pin=XTAL-2
+Added Net: Name=XTAL2
+Change Class Name : Old Net Name=recall_mcu_v0_2 New Net Name=recall_ble_mod_v0_1
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component BLE BMD-300
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component C3 CAP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component C4 CAP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component C5 CAP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component C6 CAP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component SW2 4-1437565-1
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component SWD Header 4
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component XTAL ABS07
+Change Room Name: Old Name=recall_mcu_v0_2 New Name=recall_ble_mod_v0_1
+Change Room Scope: Old Scope=InComponentClass('recall_mcu_v0_2') New Scope=InComponentClass('recall_ble_mod_v0_1')
