@@ -1,0 +1,5 @@
+Layer Pairs Export File for PCB: C:\Users\Hieu\Documents\GitHub\recall\hw\recall_mcu\recall_mcu_v0_1.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=recall_mcu_v0_1.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Component Side_Signal_Blind_Vias|DrillFile=recall_mcu_v0_1.tx1|DrillLayers=gtl,g1
+LayersSetName=Signal_Solder Side_Blind_Vias|DrillFile=recall_mcu_v0_1.tx2|DrillLayers=g1,g2,gbl
+LayersSetName=Ground Plane_Solder Side_Blind_Vias|DrillFile=recall_mcu_v0_1.tx3|DrillLayers=g2,gbl

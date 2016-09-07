@@ -1,0 +1,15 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [recall_mcu_v0_1.PrjPcb]
+   Generated File[recall_mcu_v0_1.TXT]
+   Generated File[recall_mcu_v0_1.TX1]
+   Generated File[recall_mcu_v0_1.TX2]
+   Generated File[recall_mcu_v0_1.TX3]
+   Generated File[recall_mcu_v0_1.LDP]
+   Generated File[recall_mcu_v0_1.DRR]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 11:56:21 PM On 9/6/2016
