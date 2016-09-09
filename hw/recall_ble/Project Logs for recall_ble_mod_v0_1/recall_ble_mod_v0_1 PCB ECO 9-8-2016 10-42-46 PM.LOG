@@ -1,0 +1,8 @@
+Added Component: Designator=R5(RES_0402)
+Added Component: Designator=R6(RES_0402)
+Added Pin To Net: NetName=NetC5_2 Pin=R5-1
+Added Pin To Net: NetName=VDD Pin=R5-2
+Added Pin To Net: NetName=NetC6_2 Pin=R6-1
+Added Pin To Net: NetName=VDD Pin=R6-2
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component R5 RES
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component R6 RES
