@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=D1_CTRL Pin=D1-
+Removed Pin From Net: NetName=NetD1_A Pin=D1-
+Removed Pin From Net: NetName=D2_CTRL Pin=D2-
+Removed Pin From Net: NetName=NetD2_A Pin=D2-
+Removed Pin From Net: NetName=NetC6_2 Pin=TP1-1
+Removed Pin From Net: NetName=GND Pin=TP2-1
+Removed Member From Class: ClassName=recall_ble_mod_v0_1 Member=TP1
+Removed Member From Class: ClassName=recall_ble_mod_v0_1 Member=TP2
+Change Component Footprint: Designator=SW2 Old Footprint=4-1437565-1 New Footprint=DDS001
+Change Component Comment : Designator=SW2 Old Comment=4-1437565-1 New Comment=DDS001

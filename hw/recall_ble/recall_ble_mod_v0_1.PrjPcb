@@ -106,6 +106,70 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CKITYUWR
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\Design Rule Check - recall_ble_mod_v0_1.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.REP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for recall_ble_mod_v0_1\recall_ble_mod_v0_1.TXT
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0

@@ -1,0 +1,4 @@
+Added Component: Designator=SW2(DDS001)
+Added Pin To Net: NetName=NetC6_2 Pin=SW2-1
+Added Pin To Net: NetName=GND Pin=SW2-2
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component SW2 DDS001

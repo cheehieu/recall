@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VDD Pin=Rsh-2
+Removed Member From Class: ClassName=recall_ble_mod_v0_1 Member=Rsh
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Pin To Net: NetName=VDD Pin=BAT-1
+Added Pin To Net: NetName=VDD Pin=BAT-1

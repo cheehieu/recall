@@ -1,0 +1,8 @@
+Added Component: Designator=TP1(TESTPOINT)
+Added Component: Designator=TP2(TESTPOINT)
+Added Pin To Net: NetName=NetC6_2 Pin=TP1-1
+Added Pin To Net: NetName=GND Pin=TP2-1
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component C2 CAP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component R4 RES
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component TP1 TP
+Added Member To Class: ClassName=recall_ble_mod_v0_1 Member=Component TP2 TP
