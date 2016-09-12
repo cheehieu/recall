@@ -1,0 +1,2 @@
+Change Physical Footprint: Designator=ANT Old Footprint=ANTENNA_PCB New Footprint=ANTENNA_PCB
+Change Physical Footprint: Designator=U1 Old Footprint=sot-553 New Footprint=sot-553

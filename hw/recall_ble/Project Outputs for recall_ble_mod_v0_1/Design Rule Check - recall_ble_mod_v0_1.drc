@@ -1,20 +1,19 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Hieu\Documents\GitHub\recall\hw\recall_ble\recall_ble_mod_v0_1.PcbDoc
-Date     : 9/8/2016
-Time     : 11:02:12 PM
+Date     : 9/11/2016
+Time     : 8:10:14 PM
 
 Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
-   Violation between Board Outline Clearance(Outline Edge): (4.918mil < 15mil) Between Track (-26.024mil,-196.583mil)(533.031mil,-196.583mil) on Top Overlay And Board Edge 
-   Violation between Board Outline Clearance(Outline Edge): (4.918mil < 15mil) Between Track (533.031mil,-196.583mil)(533.031mil,197.118mil) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (5.469mil < 15mil) Between Track (-26.024mil,-196.583mil)(533.031mil,-196.583mil) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (5.383mil < 15mil) Between Track (533.031mil,-196.583mil)(533.031mil,197.118mil) on Top Overlay And Board Edge 
    Violation between Board Outline Clearance(Outline Edge): (6.532mil < 15mil) Between Track (492.598mil,195.819mil)(531.968mil,156.449mil) on Top Overlay And Board Edge 
    Violation between Board Outline Clearance(Outline Edge): (5.383mil < 15mil) Between Track (-26.024mil,197.118mil)(533.031mil,197.118mil) on Top Overlay And Board Edge 
-   Violation between Board Outline Clearance(Outline Edge): (12.974mil < 15mil) Between Text "R5" (-215mil,-275mil) on Top Overlay And Board Edge 
    Violation between Board Outline Clearance(Outline Edge): (11.32mil < 15mil) Between Text "C2" (157mil,397mil) on Top Overlay And Board Edge 
    Violation between Board Outline Clearance(Outline Edge): (8.867mil < 15mil) Between Region (0 hole(s)) Top Overlay And Board Edge 
-Rule Violations :7
+Rule Violations :6
 
 Processing Rule : Room recall_ble_mod_v0_1 (Bounding Region = (1895mil, 2930mil, 8685mil, 7625mil) (InComponentClass('recall_ble_mod_v0_1'))
 Rule Violations :0
@@ -23,11 +22,11 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net VDD Between Track (-430.315mil,35mil)(-395mil,70.315mil) on Component Side And Pad R6-2(-343.268mil,-110mil) on Component Side 
+   Violation between Un-Routed Net Constraint: Net VDD Between Track (-395mil,34.685mil)(-155.315mil,34.685mil) on Component Side And Track (-95mil,-285mil)(-83.268mil,-273.268mil) on Component Side 
 Rule Violations :1
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
-   Violation between Clearance Constraint: (4.921mil < 6mil) Between Pad U1-2(-464.685mil,35mil) on Component Side And Pad U1-1(-445mil,35mil) on Component Side 
+   Violation between Clearance Constraint: (4.921mil < 6mil) Between Pad U1-2(-459.685mil,35mil) on Component Side And Pad U1-1(-440mil,35mil) on Component Side 
 Rule Violations :1
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
@@ -50,8 +49,8 @@ Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
    Violation between Silk To Solder Mask Clearance Constraint: (4.696mil < 6mil) Between Text "D1" (-15mil,390mil) on Top Overlay And Pad D1-A(0mil,336.48mil) on Component Side [Top Overlay] to [Top Solder] clearance [4.696mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (4.899mil < 6mil) Between Text "D1" (-15mil,390mil) on Top Overlay And Pad BAT-1(59.055mil,409.449mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [4.899mil]
    Violation between Silk To Solder Mask Clearance Constraint: (3.909mil < 6mil) Between Text "D1" (-15mil,390mil) on Top Overlay And Pad BAT-1(-62.992mil,409.449mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [3.909mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.899mil < 6mil) Between Text "D1" (-15mil,390mil) on Top Overlay And Pad BAT-1(59.055mil,409.449mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [4.899mil]
 Rule Violations :3
 
 Processing Rule : Silk to Silk (Clearance=6mil) (All),(All)
@@ -64,5 +63,5 @@ Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
 
-Violations Detected : 12
+Violations Detected : 11
 Time Elapsed        : 00:00:01

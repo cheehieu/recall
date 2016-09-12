@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=ANT Pin=ANT-1
+Removed Member From Class: ClassName=recall_ble_v0_1 Member=ANT

@@ -1,0 +1,78 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+D1         SOD-523                984mil        566mil        984mil        566mil   1011.559mil        566mil  B        360.00 1PS79SB30.115  
+R20        RESC1005X04L           944mil        264mil        944mil        264mil        944mil    283.685mil  B        270.00 8k2            
+R19        RESC1005X04L           980mil        323mil        980mil        323mil        980mil    342.685mil  B        270.00 6k8            
+L3         INDC1005X04L           285mil        215mil        285mil        215mil        285mil    233.701mil  T        270.00 3.3nH          
+L2         INDC1005X04L           257mil        402mil        257mil        402mil        257mil    420.701mil  T        270.00 27nH           
+L1         INDC1005X04L           285mil        357mil        285mil        357mil        285mil    375.701mil  T        270.00 4.7nH          
+C6         CAPC1005X04L           285mil        144mil        285mil        144mil        285mil    163.685mil  T        270.00 1.5pF          
+C5         CAPC1005X04L           285mil        286mil        285mil        286mil        285mil    305.685mil  T        270.00 3.9pF          
+C4         CAPC1005X04L           234mil        264mil        234mil        264mil    253.685mil        264mil  T        180.00 1.0pF          
+R13        RESC1005X04L           510mil        190mil        510mil        190mil        510mil    209.685mil  B        270.00 680R           
+R12        RESC1005X04L           526mil         94mil        526mil         94mil        526mil    113.685mil  B        270.00 2k2            
+LD2        LED_DUAL_0606          763mil         43mil        763mil         43mil    734.457mil     59.732mil  T         90.00 LTST-C195KGJRKT
+C10        CAPC1005X04L           280mil        473mil        280mil        473mil        280mil    453.315mil  T         90.00 47nF           
+C14        CAPC1005X04L           254mil    144.001mil        254mil    144.001mil        254mil    163.686mil  T        270.00 1.0pF          
+C3         CAPC1005X04L           244mil        473mil        244mil        473mil        244mil    453.315mil  T         90.00 2.2nF          
+R10        RESC1005X04L           965mil        111mil        965mil        111mil    984.685mil        111mil  B        180.00 4k7            
+R4         RESC1005X04L          1040mil        229mil       1040mil        229mil   1020.315mil        229mil  T          0.00 39R            
+R3         RESC1005X04L          1045mil        395mil       1045mil        395mil   1025.315mil        395mil  T        360.00 39R            
+C13        CAPC1005X04L           624mil        109mil        624mil        109mil        624mil     89.315mil  T         90.00 12pF           
+C12        CAPC1005X04L           624mil        187mil        624mil        187mil        624mil    206.685mil  T        270.00 12pF           
+X2         XTAL_3215              568mil        147mil        568mil        147mil        568mil    196.213mil  T        270.00 32.768kHz      
+C2         CAPC1005X04L           447mil        148mil        447mil        148mil     433.08mil     161.92mil  T        315.00 12pF           
+C9         CAPC1005X04L           335mil        201mil        335mil        201mil        335mil    220.685mil  T        270.00 1.0nF          
+C7         CAPC1005X04L           620mil        266mil        620mil        266mil        620mil    285.685mil  T        270.00 100nF          
+C8         CAPC1005X04L           451mil        193mil        451mil        193mil     437.08mil     206.92mil  T        315.00 100nF          
+C11        CAPC1005X04L           616mil     455.06mil        616mil     455.06mil        616mil    435.375mil  T         90.00 100nF          
+U1         QFN40P600X600X90-48N        464mil    373.001mil        464mil    373.001mil    583.094mil    286.387mil  T        180.00 nRF51422-QFAC  
+X1         BT-XTAL_2520           395mil     96.001mil        395mil     96.001mil    390.824mil      52.85mil  T         45.00 16MHz          
+C1         CAPC1005X04L           342mil     43.001mil        342mil     43.001mil    355.919mil     29.081mil  T        135.00 12pF           
+L4         INDC1005X04L           202mil        123mil        202mil        123mil    220.701mil        123mil  T        180.00 1.8nH          
+C16        CAPC1608X06L           854mil        563mil        854mil        563mil        854mil    589.575mil  T        270.00 1.0µF          
+C15        CAPC1608X06L          1052mil        520mil       1052mil        520mil       1052mil    493.425mil  T         90.00 1.0µF          
+Fid1       Fiducial               237mil         47mil        237mil         47mil        237mil         47mil  T          0.00 Fiducial mark  
+C20        CAPC1608X06L           977mil        433mil        977mil        433mil        977mil    459.575mil  T        270.00 10µF           
+C21        CAPC1005X04L         936.5mil        444mil      936.5mil        444mil      936.5mil    463.685mil  T        270.00 100nF          
+C39        CAPC1005X04L           943mil        168mil        943mil        168mil        943mil    148.315mil  B         90.00 100nF          
+C23        CAPC1005X04L           721mil        562mil        721mil        562mil        721mil    581.685mil  B        270.00 18pF           
+C27        CAPC1608X06L           627mil        547mil        627mil        547mil        627mil    573.575mil  B        270.00 10µF           
+C22        CAPC1005X04L           903mil        562mil        903mil        562mil        903mil    542.315mil  B         90.00 18pF           
+C26        CAPC1005X04L           667mil        537mil        667mil        537mil        667mil    556.685mil  B        270.00 100nF          
+C25        CAPC1608X06L           547mil        546mil        547mil        546mil        547mil    572.575mil  B        270.00 10µF           
+C18        CAPC1005X04L           831mil        468mil        831mil        468mil        831mil    487.685mil  T        270.00 100nF          
+C19        CAPC1005X04L           964mil        486mil        964mil        486mil    983.685mil        486mil  B        180.00 10pF           
+C28        CAPC1005X04L           730mil        424mil        730mil        424mil        730mil    443.685mil  T        270.00 10nF           
+C24        CAPC1005X04L           848mil        309mil        848mil        309mil    828.315mil        309mil  T        360.00 100nF          
+C29        CAPC1005X04L           849mil        240mil        849mil        240mil    868.685mil        240mil  T        180.00 100nF          
+C30        CAPC1005X04L           696mil        391mil        696mil        391mil        696mil    410.685mil  T        270.00 100nF          
+C31        CAPC1005X04L           545mil        399mil        545mil        399mil        545mil    418.685mil  B        270.00 100nF          
+C32        CAPC1005X04L           835mil        114mil        835mil        114mil    815.315mil        114mil  B        360.00 100nF          
+C33        CAPC1005X04L           748mil        299mil        748mil        299mil        748mil    279.315mil  T         90.00 100nF          
+C34        CAPC1005X04L           848mil        412mil        848mil        412mil    828.315mil        412mil  T        360.00 100nF          
+C35        CAPC1005X04L           772mil        217mil        772mil        217mil        772mil    197.315mil  T         90.00 100nF          
+C36        CAPC1005X04L           545mil        280mil        545mil        280mil        545mil    260.315mil  B         90.00 100nF          
+C37        CAPC1005X04L           714mil        269mil        714mil        269mil        714mil    249.315mil  T         90.00 100nF          
+C38        CAPC1005X04L           766mil        454mil        766mil        454mil        766mil    473.685mil  T        270.00 100nF          
+D2         SOT190P230X110-4L       1038mil        312mil       1038mil        312mil   1008.472mil    271.646mil  T         90.00 PRTR5V0U2X     
+R8         RESC1005X04L           980mil        225mil        980mil        225mil        980mil    244.685mil  B        270.00 4k7            
+R9         RESC1005X04L          1036mil         96mil       1036mil         96mil       1036mil    115.685mil  T        270.00 4k7            
+R11        RESC1005X04L           964mil        521mil        964mil        521mil    983.685mil        521mil  B        180.00 4k7            
+R5         RESC1005X04L           964mil        451mil        964mil        451mil    983.685mil        451mil  B        180.00 6k8            
+R6         RESC1005X04L           692mil         96mil        692mil         96mil        692mil    115.685mil  B        270.00 150R           
+R7         RESC1005X04L           656mil         96mil        656mil         96mil        656mil    115.685mil  B        270.00 150R           
+U3         BGA100C80P10X10_900X900X110        744mil        315mil        744mil        315mil    885.732mil    456.732mil  B        180.00 ATSAM3U2CA-CU  
+X3         BT-XTAL_3225           812mil        562mil        812mil        562mil    859.008mil    526.941mil  B        180.00 12MHz          
+R17        RESC1005X04L           202mil        164mil        202mil        164mil    221.685mil        164mil  T        180.00 0R             
+LD1        SML-LX0404SIUPGUSB        520mil         41mil        520mil         41mil    503.268mil     57.732mil  T        180.00 LED RGB        
+R14        RESC1005X04L           545mil        190mil        545mil        190mil        545mil    209.685mil  B        270.00 820R           
+R15        RESC1005X04L           697mil         94mil        697mil         94mil        697mil    113.685mil  T        270.00 220R           
+R16        RESC1005X04L           661mil         94mil        661mil         94mil        661mil    113.685mil  T        270.00 220R           
+U2         SOT-23-5               955mil        551mil        955mil        551mil    997.323mil    513.598mil  T         90.00 TLV70233DBVT   
+R18        RESC1005X04L           797mil        363mil        797mil        363mil        797mil    382.685mil  T        270.00 1k             
+R1         RESC1005X04L           442mil        257mil        442mil        257mil    461.685mil        257mil  B        180.00 10k            
+SW1        EVQP7A/J/B/K           385mil         83mil        385mil         83mil    455.866mil    111.543mil  B        180.00 PTS840 GK SMTR LFS
+Fid2       Fiducial              1229mil        405mil       1229mil        405mil       1229mil        405mil  T          0.00 Fiducial mark  
+D3         SOD-523                791mil        534mil        791mil        534mil    818.559mil        534mil  T          0.00 1PS79SB30.115  
+

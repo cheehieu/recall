@@ -1,0 +1,3 @@
+Added Component: Designator=ANT(ANTENNA_PCB)
+Added Pin To Net: NetName=ANT Pin=ANT-1
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component ANT ANTENNA

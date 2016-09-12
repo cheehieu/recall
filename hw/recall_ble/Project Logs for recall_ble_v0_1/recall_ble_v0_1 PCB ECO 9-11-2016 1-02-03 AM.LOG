@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=SW1N Pin=BLE-14
+Added Pin To Net: NetName=SW1N Pin=BLE-12
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component BLE nRF52832-QFAA
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component C1 CAP
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component C2 CAP
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component C3 CAP
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component C4 CAP
+Added Member To Class: ClassName=recall_ble_v0_1 Member=Component X1 32MHz

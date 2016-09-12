@@ -1,0 +1,38 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: 400101.PcbDoc   24.10.2014  14:11:46
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : 400101.TXT
+EIA File   : 400101.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T2        11.8mil (0.29972mm)      Round          142              10.16 Inch (257.99 mm)
+T3        12mil (0.3048mm)         Round          3                0.28 Inch (7.14 mm)
+T4        35.4mil (0.89916mm)      Round          10               1.79 Inch (45.52 mm)
+T5        39mil (0.9906mm)         Round          3         NPTH   0.38 Inch (9.72 mm)
+---------------------------------------------------------------------------
+Totals                                            158              12.61 Inch (320.37 mm)
+Layer Pair : Top Layer to Mid-Layer 1
+ASCII RoundHoles File : 400101.TX1
+EIA File   : 400101.DR1
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        3.9mil (0.09906mm)       Round          26               1.75 Inch (44.50 mm)
+---------------------------------------------------------------------------
+Totals                                            26               1.75 Inch (44.50 mm)
+Layer Pair : Mid-Layer 2 to Bottom Layer
+ASCII RoundHoles File : 400101.TX2
+EIA File   : 400101.DR2
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        3.9mil (0.09906mm)       Round          19               1.39 Inch (35.42 mm)
+---------------------------------------------------------------------------
+Totals                                            19               1.39 Inch (35.42 mm)
+---------------------------------------------------------------------------
+Totals                                            203              15.76 Inch (400.28 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

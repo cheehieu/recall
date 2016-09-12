@@ -1,0 +1,14 @@
+Source PCB Design recall_panel_v0_1.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [recall_ble_v0_1.PrjPcb]
+   Generated File[recall_panel_v0_1.TXT]
+   Generated File[recall_panel_v0_1.LDP]
+   Generated File[recall_panel_v0_1.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 9:34:31 PM On 9/11/2016
