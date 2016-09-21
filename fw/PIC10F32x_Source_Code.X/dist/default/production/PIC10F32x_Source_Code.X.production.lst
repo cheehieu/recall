@@ -1,0 +1,1136 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.38 build -256452561 
+                                                                                               Mon Sep 19 19:36:55 2016
+
+Microchip Technology Omniscient Code Generator v1.38 (Free mode) build 201607010351
+     1                           	processor	10F322
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	nvBANK0,global,class=BANK0,space=1,delta=1
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     7                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	maintext,global,class=CODE,split=1,delta=2
+     9                           	psect	text1,local,class=CODE,merge=1,delta=2
+    10                           	psect	text2,local,class=CODE,merge=1,delta=2
+    11                           	psect	text3,local,class=CODE,merge=1,delta=2
+    12                           	psect	text4,local,class=CODE,merge=1,delta=2
+    13                           	psect	text5,local,class=CODE,merge=1,delta=2
+    14                           	psect	text6,local,class=CODE,merge=1,delta=2
+    15                           	psect	text7,local,class=CODE,merge=1,delta=2
+    16                           	psect	text8,local,class=CODE,merge=1,delta=2
+    17                           	dabs	1,0x7E,2
+    18  0000                     	;# 
+    19  0001                     	;# 
+    20  0002                     	;# 
+    21  0003                     	;# 
+    22  0004                     	;# 
+    23  0005                     	;# 
+    24  0006                     	;# 
+    25  0007                     	;# 
+    26  0008                     	;# 
+    27  0009                     	;# 
+    28  000A                     	;# 
+    29  000B                     	;# 
+    30  000C                     	;# 
+    31  000D                     	;# 
+    32  000E                     	;# 
+    33  000F                     	;# 
+    34  0010                     	;# 
+    35  0011                     	;# 
+    36  0012                     	;# 
+    37  0013                     	;# 
+    38  0014                     	;# 
+    39  0015                     	;# 
+    40  0016                     	;# 
+    41  0016                     	;# 
+    42  0017                     	;# 
+    43  0018                     	;# 
+    44  0019                     	;# 
+    45  0019                     	;# 
+    46  001A                     	;# 
+    47  001B                     	;# 
+    48  001C                     	;# 
+    49  001D                     	;# 
+    50  001E                     	;# 
+    51  001F                     	;# 
+    52  0020                     	;# 
+    53  0020                     	;# 
+    54  0021                     	;# 
+    55  0022                     	;# 
+    56  0022                     	;# 
+    57  0023                     	;# 
+    58  0024                     	;# 
+    59  0025                     	;# 
+    60  0026                     	;# 
+    61  0027                     	;# 
+    62  0027                     	;# 
+    63  0028                     	;# 
+    64  0029                     	;# 
+    65  002A                     	;# 
+    66  002A                     	;# 
+    67  002B                     	;# 
+    68  002C                     	;# 
+    69  002D                     	;# 
+    70  002E                     	;# 
+    71  0030                     	;# 
+    72  0031                     	;# 
+    73  0032                     	;# 
+    74  0033                     	;# 
+    75  0034                     	;# 
+    76  0035                     	;# 
+    77  0036                     	;# 
+    78  0037                     	;# 
+    79  0038                     	;# 
+    80  0039                     	;# 
+    81  003A                     	;# 
+    82  003B                     	;# 
+    83  003C                     	;# 
+    84  003D                     	;# 
+    85  003E                     	;# 
+    86  003F                     	;# 
+    87  0000                     	;# 
+    88  0001                     	;# 
+    89  0002                     	;# 
+    90  0003                     	;# 
+    91  0004                     	;# 
+    92  0005                     	;# 
+    93  0006                     	;# 
+    94  0007                     	;# 
+    95  0008                     	;# 
+    96  0009                     	;# 
+    97  000A                     	;# 
+    98  000B                     	;# 
+    99  000C                     	;# 
+   100  000D                     	;# 
+   101  000E                     	;# 
+   102  000F                     	;# 
+   103  0010                     	;# 
+   104  0011                     	;# 
+   105  0012                     	;# 
+   106  0013                     	;# 
+   107  0014                     	;# 
+   108  0015                     	;# 
+   109  0016                     	;# 
+   110  0016                     	;# 
+   111  0017                     	;# 
+   112  0018                     	;# 
+   113  0019                     	;# 
+   114  0019                     	;# 
+   115  001A                     	;# 
+   116  001B                     	;# 
+   117  001C                     	;# 
+   118  001D                     	;# 
+   119  001E                     	;# 
+   120  001F                     	;# 
+   121  0020                     	;# 
+   122  0020                     	;# 
+   123  0021                     	;# 
+   124  0022                     	;# 
+   125  0022                     	;# 
+   126  0023                     	;# 
+   127  0024                     	;# 
+   128  0025                     	;# 
+   129  0026                     	;# 
+   130  0027                     	;# 
+   131  0027                     	;# 
+   132  0028                     	;# 
+   133  0029                     	;# 
+   134  002A                     	;# 
+   135  002A                     	;# 
+   136  002B                     	;# 
+   137  002C                     	;# 
+   138  002D                     	;# 
+   139  002E                     	;# 
+   140  0030                     	;# 
+   141  0031                     	;# 
+   142  0032                     	;# 
+   143  0033                     	;# 
+   144  0034                     	;# 
+   145  0035                     	;# 
+   146  0036                     	;# 
+   147  0037                     	;# 
+   148  0038                     	;# 
+   149  0039                     	;# 
+   150  003A                     	;# 
+   151  003B                     	;# 
+   152  003C                     	;# 
+   153  003D                     	;# 
+   154  003E                     	;# 
+   155  003F                     	;# 
+   156  0000                     	;# 
+   157  0001                     	;# 
+   158  0002                     	;# 
+   159  0003                     	;# 
+   160  0004                     	;# 
+   161  0005                     	;# 
+   162  0006                     	;# 
+   163  0007                     	;# 
+   164  0008                     	;# 
+   165  0009                     	;# 
+   166  000A                     	;# 
+   167  000B                     	;# 
+   168  000C                     	;# 
+   169  000D                     	;# 
+   170  000E                     	;# 
+   171  000F                     	;# 
+   172  0010                     	;# 
+   173  0011                     	;# 
+   174  0012                     	;# 
+   175  0013                     	;# 
+   176  0014                     	;# 
+   177  0015                     	;# 
+   178  0016                     	;# 
+   179  0016                     	;# 
+   180  0017                     	;# 
+   181  0018                     	;# 
+   182  0019                     	;# 
+   183  0019                     	;# 
+   184  001A                     	;# 
+   185  001B                     	;# 
+   186  001C                     	;# 
+   187  001D                     	;# 
+   188  001E                     	;# 
+   189  001F                     	;# 
+   190  0020                     	;# 
+   191  0020                     	;# 
+   192  0021                     	;# 
+   193  0022                     	;# 
+   194  0022                     	;# 
+   195  0023                     	;# 
+   196  0024                     	;# 
+   197  0025                     	;# 
+   198  0026                     	;# 
+   199  0027                     	;# 
+   200  0027                     	;# 
+   201  0028                     	;# 
+   202  0029                     	;# 
+   203  002A                     	;# 
+   204  002A                     	;# 
+   205  002B                     	;# 
+   206  002C                     	;# 
+   207  002D                     	;# 
+   208  002E                     	;# 
+   209  0030                     	;# 
+   210  0031                     	;# 
+   211  0032                     	;# 
+   212  0033                     	;# 
+   213  0034                     	;# 
+   214  0035                     	;# 
+   215  0036                     	;# 
+   216  0037                     	;# 
+   217  0038                     	;# 
+   218  0039                     	;# 
+   219  003A                     	;# 
+   220  003B                     	;# 
+   221  003C                     	;# 
+   222  003D                     	;# 
+   223  003E                     	;# 
+   224  003F                     	;# 
+   225  0000                     	;# 
+   226  0001                     	;# 
+   227  0002                     	;# 
+   228  0003                     	;# 
+   229  0004                     	;# 
+   230  0005                     	;# 
+   231  0006                     	;# 
+   232  0007                     	;# 
+   233  0008                     	;# 
+   234  0009                     	;# 
+   235  000A                     	;# 
+   236  000B                     	;# 
+   237  000C                     	;# 
+   238  000D                     	;# 
+   239  000E                     	;# 
+   240  000F                     	;# 
+   241  0010                     	;# 
+   242  0011                     	;# 
+   243  0012                     	;# 
+   244  0013                     	;# 
+   245  0014                     	;# 
+   246  0015                     	;# 
+   247  0016                     	;# 
+   248  0016                     	;# 
+   249  0017                     	;# 
+   250  0018                     	;# 
+   251  0019                     	;# 
+   252  0019                     	;# 
+   253  001A                     	;# 
+   254  001B                     	;# 
+   255  001C                     	;# 
+   256  001D                     	;# 
+   257  001E                     	;# 
+   258  001F                     	;# 
+   259  0020                     	;# 
+   260  0020                     	;# 
+   261  0021                     	;# 
+   262  0022                     	;# 
+   263  0022                     	;# 
+   264  0023                     	;# 
+   265  0024                     	;# 
+   266  0025                     	;# 
+   267  0026                     	;# 
+   268  0027                     	;# 
+   269  0027                     	;# 
+   270  0028                     	;# 
+   271  0029                     	;# 
+   272  002A                     	;# 
+   273  002A                     	;# 
+   274  002B                     	;# 
+   275  002C                     	;# 
+   276  002D                     	;# 
+   277  002E                     	;# 
+   278  0030                     	;# 
+   279  0031                     	;# 
+   280  0032                     	;# 
+   281  0033                     	;# 
+   282  0034                     	;# 
+   283  0035                     	;# 
+   284  0036                     	;# 
+   285  0037                     	;# 
+   286  0038                     	;# 
+   287  0039                     	;# 
+   288  003A                     	;# 
+   289  003B                     	;# 
+   290  003C                     	;# 
+   291  003D                     	;# 
+   292  003E                     	;# 
+   293  003F                     	;# 
+   294  0000                     	;# 
+   295  0001                     	;# 
+   296  0002                     	;# 
+   297  0003                     	;# 
+   298  0004                     	;# 
+   299  0005                     	;# 
+   300  0006                     	;# 
+   301  0007                     	;# 
+   302  0008                     	;# 
+   303  0009                     	;# 
+   304  000A                     	;# 
+   305  000B                     	;# 
+   306  000C                     	;# 
+   307  000D                     	;# 
+   308  000E                     	;# 
+   309  000F                     	;# 
+   310  0010                     	;# 
+   311  0011                     	;# 
+   312  0012                     	;# 
+   313  0013                     	;# 
+   314  0014                     	;# 
+   315  0015                     	;# 
+   316  0016                     	;# 
+   317  0016                     	;# 
+   318  0017                     	;# 
+   319  0018                     	;# 
+   320  0019                     	;# 
+   321  0019                     	;# 
+   322  001A                     	;# 
+   323  001B                     	;# 
+   324  001C                     	;# 
+   325  001D                     	;# 
+   326  001E                     	;# 
+   327  001F                     	;# 
+   328  0020                     	;# 
+   329  0020                     	;# 
+   330  0021                     	;# 
+   331  0022                     	;# 
+   332  0022                     	;# 
+   333  0023                     	;# 
+   334  0024                     	;# 
+   335  0025                     	;# 
+   336  0026                     	;# 
+   337  0027                     	;# 
+   338  0027                     	;# 
+   339  0028                     	;# 
+   340  0029                     	;# 
+   341  002A                     	;# 
+   342  002A                     	;# 
+   343  002B                     	;# 
+   344  002C                     	;# 
+   345  002D                     	;# 
+   346  002E                     	;# 
+   347  0030                     	;# 
+   348  0031                     	;# 
+   349  0032                     	;# 
+   350  0033                     	;# 
+   351  0034                     	;# 
+   352  0035                     	;# 
+   353  0036                     	;# 
+   354  0037                     	;# 
+   355  0038                     	;# 
+   356  0039                     	;# 
+   357  003A                     	;# 
+   358  003B                     	;# 
+   359  003C                     	;# 
+   360  003D                     	;# 
+   361  003E                     	;# 
+   362  003F                     	;# 
+   363                           
+   364                           	psect	nvBANK0
+   365  0046                     __pnvBANK0:	
+   366  0046                     _dutycycle:	
+   367  0046                     	ds	2
+   368  001F                     _ADCON	set	31
+   369  001F                     _ADCONbits	set	31
+   370  001E                     _ADRES	set	30
+   371  0008                     _ANSELAbits	set	8
+   372  0007                     _LATAbits	set	7
+   373  0010                     _OSCCON	set	16
+   374  000C                     _PIR1bits	set	12
+   375  0012                     _PR2	set	18
+   376  0016                     _PWM1CON	set	22
+   377  0015                     _PWM1DCH	set	21
+   378  0014                     _PWM1DCL	set	20
+   379  0013                     _T2CON	set	19
+   380  0013                     _T2CONbits	set	19
+   381  0011                     _TMR2	set	17
+   382  0006                     _TRISAbits	set	6
+   383                           
+   384                           ; #config settings
+   385  0000                     
+   386                           	psect	cinit
+   387  01FE                     start_initialization:	
+   388  01FE                     __initialization:	
+   389  01FE                     end_of_initialization:	
+   390                           ;End of C runtime variable initialization code
+   391                           
+   392  01FE                     __end_of__initialization:	
+   393  01FE  0183               	clrf	3
+   394  01FF  29E5               	ljmp	_main	;jump to C main() function
+   395                           
+   396                           	psect	cstackCOMMON
+   397  0000                     __pcstackCOMMON:	
+   398  0000                     ??_OSCILLATOR_Initialize:	
+   399  0000                     ??_PWM_Initialize:	
+   400                           ; 1 bytes @ 0x0
+   401                           
+   402  0000                     ??_TMR2_Initialize:	
+   403                           ; 1 bytes @ 0x0
+   404                           
+   405  0000                     ??_ADC_Initialize:	
+   406                           ; 1 bytes @ 0x0
+   407                           
+   408  0000                     ??_SYSTEM_Initialize:	
+   409                           ; 1 bytes @ 0x0
+   410                           
+   411  0000                     ??_TMR2_StartTimer:	
+   412                           ; 1 bytes @ 0x0
+   413                           
+   414                           
+   415                           	psect	cstackBANK0
+   416  0040                     __pcstackBANK0:	
+   417                           ; 1 bytes @ 0x0
+   418                           
+   419  0040                     ?_OSCILLATOR_Initialize:	
+   420  0040                     ?_PWM_Initialize:	
+   421                           ; 1 bytes @ 0x0
+   422                           
+   423  0040                     ?_TMR2_Initialize:	
+   424                           ; 1 bytes @ 0x0
+   425                           
+   426  0040                     ?_ADC_Initialize:	
+   427                           ; 1 bytes @ 0x0
+   428                           
+   429  0040                     ?_ADC_GetConversion:	
+   430                           ; 1 bytes @ 0x0
+   431                           
+   432  0040                     ??_ADC_GetConversion:	
+   433                           ; 1 bytes @ 0x0
+   434                           
+   435  0040                     ?_SYSTEM_Initialize:	
+   436                           ; 1 bytes @ 0x0
+   437                           
+   438  0040                     ?_PWM_LoadDutyValue:	
+   439                           ; 1 bytes @ 0x0
+   440                           
+   441  0040                     ?_TMR2_StartTimer:	
+   442                           ; 1 bytes @ 0x0
+   443                           
+   444  0040                     ?_main:	
+   445                           ; 1 bytes @ 0x0
+   446                           
+   447  0040                     PWM_LoadDutyValue@dutyValue:	
+   448                           ; 1 bytes @ 0x0
+   449                           
+   450                           
+   451                           ; 2 bytes @ 0x0
+   452  0040                     	ds	1
+   453  0041                     ADC_GetConversion@channel:	
+   454                           
+   455                           ; 1 bytes @ 0x1
+   456  0041                     	ds	1
+   457  0042                     ??_PWM_LoadDutyValue:	
+   458                           
+   459                           ; 1 bytes @ 0x2
+   460  0042                     	ds	2
+   461  0044                     ??_main:	
+   462                           
+   463                           ; 1 bytes @ 0x4
+   464  0044                     	ds	2
+   465                           
+   466                           	psect	maintext
+   467  01E5                     __pmaintext:	
+   468 ;;
+   469 ;;Main: autosize = 0, tempsize = 2, incstack = 0, save=0
+   470 ;;
+   471 ;; *************** function _main *****************
+   472 ;; Defined at:
+   473 ;;		line 49 in file "main.c"
+   474 ;; Parameters:    Size  Location     Type
+   475 ;;		None
+   476 ;; Auto vars:     Size  Location     Type
+   477 ;;		None
+   478 ;; Return value:  Size  Location     Type
+   479 ;;                  1    wreg      void 
+   480 ;; Registers used:
+   481 ;;		wreg, status,2, status,0, pclath, cstack
+   482 ;; Tracked objects:
+   483 ;;		On entry : B00/0
+   484 ;;		On exit  : 0/0
+   485 ;;		Unchanged: 0/0
+   486 ;; Data sizes:     COMMON   BANK0
+   487 ;;      Params:         0       0
+   488 ;;      Locals:         0       0
+   489 ;;      Temps:          0       2
+   490 ;;      Totals:         0       2
+   491 ;;Total ram usage:        2 bytes
+   492 ;; Hardware stack levels required when called:    2
+   493 ;; This function calls:
+   494 ;;		_ADC_GetConversion
+   495 ;;		_PWM_LoadDutyValue
+   496 ;;		_SYSTEM_Initialize
+   497 ;;		_TMR2_StartTimer
+   498 ;; This function is called by:
+   499 ;;		Startup code after reset
+   500 ;; This function uses a non-reentrant model
+   501 ;;
+   502                           
+   503                           
+   504                           ;psect for function _main
+   505  01E5                     _main:	
+   506                           
+   507                           ;main.c: 51: SYSTEM_Initialize();
+   508                           
+   509                           ;incstack = 0
+   510                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
+   511  01E5  21B2               	fcall	_SYSTEM_Initialize
+   512                           
+   513                           ;main.c: 53: TRISAbits.TRISA0 = 0;
+   514  01E6  1006               	bcf	6,0	;volatile
+   515                           
+   516                           ;main.c: 54: TRISAbits.TRISA1 = 0;
+   517  01E7  1086               	bcf	6,1	;volatile
+   518                           
+   519                           ;main.c: 55: LATAbits.LATA1 = 1;
+   520  01E8  1487               	bsf	7,1	;volatile
+   521                           
+   522                           ;main.c: 57: TMR2_StartTimer();
+   523  01E9  21A5               	fcall	_TMR2_StartTimer
+   524  01EA                     l551:	
+   525                           ;main.c: 59: while (1)
+   526                           
+   527                           
+   528                           ;main.c: 60: {
+   529                           ;main.c: 64: dutycycle = (ADC_GetConversion (channel_AN2) * 4);
+   530  01EA  3002               	movlw	2
+   531  01EB  21BD               	fcall	_ADC_GetConversion
+   532  01EC  00C4               	movwf	??_main
+   533  01ED  01C5               	clrf	??_main+1
+   534  01EE  1003               	clrc
+   535  01EF  0DC4               	rlf	??_main,f
+   536  01F0  0DC5               	rlf	??_main+1,f
+   537  01F1  1003               	clrc
+   538  01F2  0DC4               	rlf	??_main,f
+   539  01F3  0DC5               	rlf	??_main+1,f
+   540  01F4  0844               	movf	??_main,w
+   541  01F5  00C6               	movwf	_dutycycle
+   542  01F6  0845               	movf	??_main+1,w
+   543  01F7  00C7               	movwf	_dutycycle+1
+   544                           
+   545                           ;main.c: 66: PWM_LoadDutyValue (dutycycle);
+   546  01F8  0847               	movf	_dutycycle+1,w
+   547  01F9  00C1               	movwf	PWM_LoadDutyValue@dutyValue+1
+   548  01FA  0846               	movf	_dutycycle,w
+   549  01FB  00C0               	movwf	PWM_LoadDutyValue@dutyValue
+   550  01FC  21CD               	fcall	_PWM_LoadDutyValue
+   551  01FD  29EA               	goto	l551
+   552  01FE                     __end_of_main:	
+   553                           
+   554                           	psect	text1
+   555  01A5                     __ptext1:	
+   556 ;; *************** function _TMR2_StartTimer *****************
+   557 ;; Defined at:
+   558 ;;		line 39 in file "tmr2.c"
+   559 ;; Parameters:    Size  Location     Type
+   560 ;;		None
+   561 ;; Auto vars:     Size  Location     Type
+   562 ;;		None
+   563 ;; Return value:  Size  Location     Type
+   564 ;;                  1    wreg      void 
+   565 ;; Registers used:
+   566 ;;		None
+   567 ;; Tracked objects:
+   568 ;;		On entry : 0/0
+   569 ;;		On exit  : 0/0
+   570 ;;		Unchanged: 0/0
+   571 ;; Data sizes:     COMMON   BANK0
+   572 ;;      Params:         0       0
+   573 ;;      Locals:         0       0
+   574 ;;      Temps:          0       0
+   575 ;;      Totals:         0       0
+   576 ;;Total ram usage:        0 bytes
+   577 ;; Hardware stack levels used:    1
+   578 ;; This function calls:
+   579 ;;		Nothing
+   580 ;; This function is called by:
+   581 ;;		_main
+   582 ;; This function uses a non-reentrant model
+   583 ;;
+   584                           
+   585                           
+   586                           ;psect for function _TMR2_StartTimer
+   587  01A5                     _TMR2_StartTimer:	
+   588                           
+   589                           ;tmr2.c: 42: T2CONbits.TMR2ON = 1;
+   590                           
+   591                           ;incstack = 0
+   592                           ; Regs used in _TMR2_StartTimer: []
+   593  01A5  1513               	bsf	19,2	;volatile
+   594  01A6  0008               	return
+   595  01A7                     __end_of_TMR2_StartTimer:	
+   596                           
+   597                           	psect	text2
+   598  01B2                     __ptext2:	
+   599 ;; *************** function _SYSTEM_Initialize *****************
+   600 ;; Defined at:
+   601 ;;		line 33 in file "device_initialize.c"
+   602 ;; Parameters:    Size  Location     Type
+   603 ;;		None
+   604 ;; Auto vars:     Size  Location     Type
+   605 ;;		None
+   606 ;; Return value:  Size  Location     Type
+   607 ;;                  1    wreg      void 
+   608 ;; Registers used:
+   609 ;;		wreg, status,2, status,0, pclath, cstack
+   610 ;; Tracked objects:
+   611 ;;		On entry : 0/0
+   612 ;;		On exit  : 0/0
+   613 ;;		Unchanged: 0/0
+   614 ;; Data sizes:     COMMON   BANK0
+   615 ;;      Params:         0       0
+   616 ;;      Locals:         0       0
+   617 ;;      Temps:          0       0
+   618 ;;      Totals:         0       0
+   619 ;;Total ram usage:        0 bytes
+   620 ;; Hardware stack levels used:    1
+   621 ;; Hardware stack levels required when called:    1
+   622 ;; This function calls:
+   623 ;;		_ADC_Initialize
+   624 ;;		_OSCILLATOR_Initialize
+   625 ;;		_PWM_Initialize
+   626 ;;		_TMR2_Initialize
+   627 ;; This function is called by:
+   628 ;;		_main
+   629 ;; This function uses a non-reentrant model
+   630 ;;
+   631                           
+   632                           
+   633                           ;psect for function _SYSTEM_Initialize
+   634  01B2                     _SYSTEM_Initialize:	
+   635                           
+   636                           ;device_initialize.c: 35: OSCILLATOR_Initialize();
+   637                           
+   638                           ;incstack = 0
+   639                           ; Regs used in _SYSTEM_Initialize: [wreg+status,2+status,0+pclath+cstack]
+   640  01B2  21A7               	fcall	_OSCILLATOR_Initialize
+   641                           
+   642                           ;device_initialize.c: 36: ADC_Initialize();
+   643  01B3  21AD               	fcall	_ADC_Initialize
+   644                           
+   645                           ;device_initialize.c: 37: PWM_Initialize();
+   646  01B4  21AA               	fcall	_PWM_Initialize
+   647                           
+   648                           ;device_initialize.c: 38: TMR2_Initialize();
+   649  01B5  21B7               	fcall	_TMR2_Initialize
+   650  01B6  0008               	return
+   651  01B7                     __end_of_SYSTEM_Initialize:	
+   652                           
+   653                           	psect	text3
+   654  01B7                     __ptext3:	
+   655 ;; *************** function _TMR2_Initialize *****************
+   656 ;; Defined at:
+   657 ;;		line 24 in file "tmr2.c"
+   658 ;; Parameters:    Size  Location     Type
+   659 ;;		None
+   660 ;; Auto vars:     Size  Location     Type
+   661 ;;		None
+   662 ;; Return value:  Size  Location     Type
+   663 ;;                  1    wreg      void 
+   664 ;; Registers used:
+   665 ;;		wreg, status,2
+   666 ;; Tracked objects:
+   667 ;;		On entry : 0/0
+   668 ;;		On exit  : 0/0
+   669 ;;		Unchanged: 0/0
+   670 ;; Data sizes:     COMMON   BANK0
+   671 ;;      Params:         0       0
+   672 ;;      Locals:         0       0
+   673 ;;      Temps:          0       0
+   674 ;;      Totals:         0       0
+   675 ;;Total ram usage:        0 bytes
+   676 ;; Hardware stack levels used:    1
+   677 ;; This function calls:
+   678 ;;		Nothing
+   679 ;; This function is called by:
+   680 ;;		_SYSTEM_Initialize
+   681 ;; This function uses a non-reentrant model
+   682 ;;
+   683                           
+   684                           
+   685                           ;psect for function _TMR2_Initialize
+   686  01B7                     _TMR2_Initialize:	
+   687                           
+   688                           ;tmr2.c: 27: T2CON = 0x00;
+   689                           
+   690                           ;incstack = 0
+   691                           ; Regs used in _TMR2_Initialize: [wreg+status,2]
+   692  01B7  0193               	clrf	19	;volatile
+   693                           
+   694                           ;tmr2.c: 30: PR2 = 0xFF;
+   695  01B8  30FF               	movlw	255
+   696  01B9  0092               	movwf	18	;volatile
+   697                           
+   698                           ;tmr2.c: 33: TMR2 = 0x00;
+   699  01BA  0191               	clrf	17	;volatile
+   700                           
+   701                           ;tmr2.c: 36: PIR1bits.TMR2IF = 0;
+   702  01BB  108C               	bcf	12,1	;volatile
+   703  01BC  0008               	return
+   704  01BD                     __end_of_TMR2_Initialize:	
+   705                           
+   706                           	psect	text4
+   707  01AA                     __ptext4:	
+   708 ;; *************** function _PWM_Initialize *****************
+   709 ;; Defined at:
+   710 ;;		line 26 in file "pwm.c"
+   711 ;; Parameters:    Size  Location     Type
+   712 ;;		None
+   713 ;; Auto vars:     Size  Location     Type
+   714 ;;		None
+   715 ;; Return value:  Size  Location     Type
+   716 ;;                  1    wreg      void 
+   717 ;; Registers used:
+   718 ;;		wreg
+   719 ;; Tracked objects:
+   720 ;;		On entry : 0/0
+   721 ;;		On exit  : 0/0
+   722 ;;		Unchanged: 0/0
+   723 ;; Data sizes:     COMMON   BANK0
+   724 ;;      Params:         0       0
+   725 ;;      Locals:         0       0
+   726 ;;      Temps:          0       0
+   727 ;;      Totals:         0       0
+   728 ;;Total ram usage:        0 bytes
+   729 ;; Hardware stack levels used:    1
+   730 ;; This function calls:
+   731 ;;		Nothing
+   732 ;; This function is called by:
+   733 ;;		_SYSTEM_Initialize
+   734 ;; This function uses a non-reentrant model
+   735 ;;
+   736                           
+   737                           
+   738                           ;psect for function _PWM_Initialize
+   739  01AA                     _PWM_Initialize:	
+   740                           
+   741                           ;pwm.c: 29: PWM1CON = 0xc0;
+   742                           
+   743                           ;incstack = 0
+   744                           ; Regs used in _PWM_Initialize: [wreg]
+   745  01AA  30C0               	movlw	192
+   746  01AB  0096               	movwf	22	;volatile
+   747  01AC  0008               	return
+   748  01AD                     __end_of_PWM_Initialize:	
+   749                           
+   750                           	psect	text5
+   751  01A7                     __ptext5:	
+   752 ;; *************** function _OSCILLATOR_Initialize *****************
+   753 ;; Defined at:
+   754 ;;		line 41 in file "device_initialize.c"
+   755 ;; Parameters:    Size  Location     Type
+   756 ;;		None
+   757 ;; Auto vars:     Size  Location     Type
+   758 ;;		None
+   759 ;; Return value:  Size  Location     Type
+   760 ;;                  1    wreg      void 
+   761 ;; Registers used:
+   762 ;;		wreg
+   763 ;; Tracked objects:
+   764 ;;		On entry : 0/0
+   765 ;;		On exit  : 0/0
+   766 ;;		Unchanged: 0/0
+   767 ;; Data sizes:     COMMON   BANK0
+   768 ;;      Params:         0       0
+   769 ;;      Locals:         0       0
+   770 ;;      Temps:          0       0
+   771 ;;      Totals:         0       0
+   772 ;;Total ram usage:        0 bytes
+   773 ;; Hardware stack levels used:    1
+   774 ;; This function calls:
+   775 ;;		Nothing
+   776 ;; This function is called by:
+   777 ;;		_SYSTEM_Initialize
+   778 ;; This function uses a non-reentrant model
+   779 ;;
+   780                           
+   781                           
+   782                           ;psect for function _OSCILLATOR_Initialize
+   783  01A7                     _OSCILLATOR_Initialize:	
+   784                           
+   785                           ;device_initialize.c: 44: OSCCON = 0x60;
+   786                           
+   787                           ;incstack = 0
+   788                           ; Regs used in _OSCILLATOR_Initialize: [wreg]
+   789  01A7  3060               	movlw	96
+   790  01A8  0090               	movwf	16	;volatile
+   791  01A9  0008               	return
+   792  01AA                     __end_of_OSCILLATOR_Initialize:	
+   793                           
+   794                           	psect	text6
+   795  01AD                     __ptext6:	
+   796 ;; *************** function _ADC_Initialize *****************
+   797 ;; Defined at:
+   798 ;;		line 26 in file "adc.c"
+   799 ;; Parameters:    Size  Location     Type
+   800 ;;		None
+   801 ;; Auto vars:     Size  Location     Type
+   802 ;;		None
+   803 ;; Return value:  Size  Location     Type
+   804 ;;                  1    wreg      void 
+   805 ;; Registers used:
+   806 ;;		wreg
+   807 ;; Tracked objects:
+   808 ;;		On entry : 0/0
+   809 ;;		On exit  : 0/0
+   810 ;;		Unchanged: 0/0
+   811 ;; Data sizes:     COMMON   BANK0
+   812 ;;      Params:         0       0
+   813 ;;      Locals:         0       0
+   814 ;;      Temps:          0       0
+   815 ;;      Totals:         0       0
+   816 ;;Total ram usage:        0 bytes
+   817 ;; Hardware stack levels used:    1
+   818 ;; This function calls:
+   819 ;;		Nothing
+   820 ;; This function is called by:
+   821 ;;		_SYSTEM_Initialize
+   822 ;; This function uses a non-reentrant model
+   823 ;;
+   824                           
+   825                           
+   826                           ;psect for function _ADC_Initialize
+   827  01AD                     _ADC_Initialize:	
+   828                           
+   829                           ;adc.c: 28: ADCON = 0x89;
+   830                           
+   831                           ;incstack = 0
+   832                           ; Regs used in _ADC_Initialize: [wreg]
+   833  01AD  3089               	movlw	137
+   834  01AE  009F               	movwf	31	;volatile
+   835                           
+   836                           ;adc.c: 30: TRISAbits.TRISA2 = 1;
+   837  01AF  1506               	bsf	6,2	;volatile
+   838                           
+   839                           ;adc.c: 31: ANSELAbits.ANSA2 = 1;
+   840  01B0  1508               	bsf	8,2	;volatile
+   841  01B1  0008               	return
+   842  01B2                     __end_of_ADC_Initialize:	
+   843                           
+   844                           	psect	text7
+   845  01CD                     __ptext7:	
+   846 ;; *************** function _PWM_LoadDutyValue *****************
+   847 ;; Defined at:
+   848 ;;		line 32 in file "pwm.c"
+   849 ;; Parameters:    Size  Location     Type
+   850 ;;  dutyValue       2    0[BANK0 ] unsigned int 
+   851 ;; Auto vars:     Size  Location     Type
+   852 ;;		None
+   853 ;; Return value:  Size  Location     Type
+   854 ;;                  1    wreg      void 
+   855 ;; Registers used:
+   856 ;;		wreg, status,2, status,0
+   857 ;; Tracked objects:
+   858 ;;		On entry : 0/0
+   859 ;;		On exit  : 0/0
+   860 ;;		Unchanged: 0/0
+   861 ;; Data sizes:     COMMON   BANK0
+   862 ;;      Params:         0       2
+   863 ;;      Locals:         0       0
+   864 ;;      Temps:          0       2
+   865 ;;      Totals:         0       4
+   866 ;;Total ram usage:        4 bytes
+   867 ;; Hardware stack levels used:    1
+   868 ;; This function calls:
+   869 ;;		Nothing
+   870 ;; This function is called by:
+   871 ;;		_main
+   872 ;; This function uses a non-reentrant model
+   873 ;;
+   874                           
+   875                           
+   876                           ;psect for function _PWM_LoadDutyValue
+   877  01CD                     _PWM_LoadDutyValue:	
+   878                           
+   879                           ;pwm.c: 35: PWM1DCL = dutyValue << 6;
+   880                           
+   881                           ;incstack = 0
+   882                           ; Regs used in _PWM_LoadDutyValue: [wreg+status,2+status,0]
+   883  01CD  0840               	movf	PWM_LoadDutyValue@dutyValue,w
+   884  01CE  00C2               	movwf	??_PWM_LoadDutyValue
+   885  01CF  3005               	movlw	5
+   886  01D0                     u45:	
+   887  01D0  1003               	clrc
+   888  01D1  0DC2               	rlf	??_PWM_LoadDutyValue,f
+   889  01D2  3EFF               	addlw	-1
+   890  01D3  1D03               	skipz
+   891  01D4  29D0               	goto	u45
+   892  01D5  1003               	clrc
+   893  01D6  0D42               	rlf	??_PWM_LoadDutyValue,w
+   894  01D7  0094               	movwf	20	;volatile
+   895                           
+   896                           ;pwm.c: 38: PWM1DCH = dutyValue >> 2;
+   897  01D8  0841               	movf	PWM_LoadDutyValue@dutyValue+1,w
+   898  01D9  00C3               	movwf	??_PWM_LoadDutyValue+1
+   899  01DA  0840               	movf	PWM_LoadDutyValue@dutyValue,w
+   900  01DB  00C2               	movwf	??_PWM_LoadDutyValue
+   901  01DC  1003               	clrc
+   902  01DD  0CC3               	rrf	??_PWM_LoadDutyValue+1,f
+   903  01DE  0CC2               	rrf	??_PWM_LoadDutyValue,f
+   904  01DF  1003               	clrc
+   905  01E0  0CC3               	rrf	??_PWM_LoadDutyValue+1,f
+   906  01E1  0CC2               	rrf	??_PWM_LoadDutyValue,f
+   907  01E2  0842               	movf	??_PWM_LoadDutyValue,w
+   908  01E3  0095               	movwf	21	;volatile
+   909  01E4  0008               	return
+   910  01E5                     __end_of_PWM_LoadDutyValue:	
+   911                           
+   912                           	psect	text8
+   913  01BD                     __ptext8:	
+   914 ;; *************** function _ADC_GetConversion *****************
+   915 ;; Defined at:
+   916 ;;		line 36 in file "adc.c"
+   917 ;; Parameters:    Size  Location     Type
+   918 ;;  channel         1    wreg     enum E1468
+   919 ;; Auto vars:     Size  Location     Type
+   920 ;;  channel         1    1[BANK0 ] enum E1468
+   921 ;; Return value:  Size  Location     Type
+   922 ;;                  1    wreg      unsigned char 
+   923 ;; Registers used:
+   924 ;;		wreg, status,2, status,0
+   925 ;; Tracked objects:
+   926 ;;		On entry : 0/0
+   927 ;;		On exit  : 0/0
+   928 ;;		Unchanged: 0/0
+   929 ;; Data sizes:     COMMON   BANK0
+   930 ;;      Params:         0       0
+   931 ;;      Locals:         0       1
+   932 ;;      Temps:          0       1
+   933 ;;      Totals:         0       2
+   934 ;;Total ram usage:        2 bytes
+   935 ;; Hardware stack levels used:    1
+   936 ;; This function calls:
+   937 ;;		Nothing
+   938 ;; This function is called by:
+   939 ;;		_main
+   940 ;; This function uses a non-reentrant model
+   941 ;;
+   942                           
+   943                           
+   944                           ;psect for function _ADC_GetConversion
+   945  01BD                     _ADC_GetConversion:	
+   946                           
+   947                           ;incstack = 0
+   948                           ; Regs used in _ADC_GetConversion: [wreg+status,2+status,0]
+   949                           ;ADC_GetConversion@channel stored from wreg
+   950  01BD  00C1               	movwf	ADC_GetConversion@channel
+   951                           
+   952                           ;adc.c: 39: ADCONbits.CHS = channel;
+   953  01BE  0841               	movf	ADC_GetConversion@channel,w
+   954  01BF  00C0               	movwf	??_ADC_GetConversion
+   955  01C0  0DC0               	rlf	??_ADC_GetConversion,f
+   956  01C1  0DC0               	rlf	??_ADC_GetConversion,f
+   957  01C2  081F               	movf	31,w	;volatile
+   958  01C3  0640               	xorwf	??_ADC_GetConversion,w
+   959  01C4  39E3               	andlw	-29
+   960  01C5  0640               	xorwf	??_ADC_GetConversion,w
+   961  01C6  009F               	movwf	31	;volatile
+   962                           
+   963                           ;adc.c: 42: ADCONbits.ADON = 1;
+   964  01C7  141F               	bsf	31,0	;volatile
+   965                           
+   966                           ;adc.c: 45: ADCONbits.GO_nDONE = 1;
+   967  01C8  149F               	bsf	31,1	;volatile
+   968  01C9                     l16:	
+   969                           ;adc.c: 48: while (ADCONbits.GO_nDONE);
+   970                           
+   971  01C9  189F               	btfsc	31,1	;volatile
+   972  01CA  29C9               	goto	l16
+   973                           
+   974                           ;adc.c: 51: return ADRES;
+   975  01CB  081E               	movf	30,w	;volatile
+   976  01CC  0008               	return
+   977  01CD                     __end_of_ADC_GetConversion:	
+   978  007E                     btemp	set	126	;btemp
+   979  007E                     wtemp	set	126
+   980  007E                     wtemp0	set	126
+   981  0080                     wtemp1	set	128
+   982  0082                     wtemp2	set	130
+   983  0084                     wtemp3	set	132
+   984  0086                     wtemp4	set	134
+   985  0088                     wtemp5	set	136
+   986  007F                     wtemp6	set	127
+   987  007E                     ttemp	set	126
+   988  007E                     ttemp0	set	126
+   989  0081                     ttemp1	set	129
+   990  0084                     ttemp2	set	132
+   991  0087                     ttemp3	set	135
+   992  007F                     ttemp4	set	127
+   993  007E                     ltemp	set	126
+   994  007E                     ltemp0	set	126
+   995  0082                     ltemp1	set	130
+   996  0086                     ltemp2	set	134
+   997  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  2
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON            0      0       0
+    BANK0            62      6       8
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    _main->_PWM_LoadDutyValue
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 2     2      0     109
+                                              4 BANK0      2     2      0
+                  _ADC_GetConversion
+                  _PWM_LoadDutyValue
+                  _SYSTEM_Initialize
+                    _TMR2_StartTimer
+ ---------------------------------------------------------------------------------
+ (1) _TMR2_StartTimer                                      0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _SYSTEM_Initialize                                    0     0      0       0
+                     _ADC_Initialize
+              _OSCILLATOR_Initialize
+                     _PWM_Initialize
+                    _TMR2_Initialize
+ ---------------------------------------------------------------------------------
+ (2) _TMR2_Initialize                                      0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _PWM_Initialize                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _OSCILLATOR_Initialize                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _ADC_Initialize                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _PWM_LoadDutyValue                                    4     2      2      87
+                                              0 BANK0      4     2      2
+ ---------------------------------------------------------------------------------
+ (1) _ADC_GetConversion                                    2     2      0      22
+                                              0 BANK0      2     2      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _ADC_GetConversion
+   _PWM_LoadDutyValue
+   _SYSTEM_Initialize
+     _ADC_Initialize
+     _OSCILLATOR_Initialize
+     _PWM_Initialize
+     _TMR2_Initialize
+   _TMR2_StartTimer
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            0      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               0      0       0       1        0.0%
+STACK                0      0       0       2        0.0%
+BANK0               3E      6       8       3       12.9%
+ABS                  0      0       8       4        0.0%
+DATA                 0      0       8       5        0.0%
+BITBANK0            3E      0       0       6        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.38 build -256452561 
+Symbol Table                                                                                   Mon Sep 19 19:36:55 2016
+
+       __size_of_PWM_Initialize 0003                     __CFG_CP$OFF 0000                              l16 01C9  
+                            u45 01D0                     __CFG_LVP$ON 0000                             l551 01EA  
+                           _PR2 0012                 _TMR2_Initialize 01B7                    __CFG_BORV$LO 0000  
+                          _TMR2 0011                    __CFG_WRT$OFF 0000                            _main 01E5  
+                          btemp 007E                            ltemp 007E                            start 0000  
+                          ttemp 007E                            wtemp 007E                   __CFG_MCLRE$ON 0000  
+__size_of_OSCILLATOR_Initialize 0003   __end_of_OSCILLATOR_Initialize 01AA                           ?_main 0040  
+                         _ADCON 001F                           _ADRES 001E                   __CFG_WDTE$OFF 0000  
+                         _T2CON 0013                  __CFG_BOREN$OFF 0000                           ltemp0 007E  
+                         ltemp1 0082                           ltemp2 0086                           ltemp3 0080  
+                         ttemp0 007E                           ttemp1 0081                           ttemp2 0084  
+                         ttemp3 0087                           ttemp4 007F                           status 0003  
+                         wtemp0 007E                           wtemp1 0080                           wtemp2 0082  
+                         wtemp3 0084                           wtemp4 0086                           wtemp5 0088  
+                         wtemp6 007F                 _TMR2_StartTimer 01A5                 __initialization 01FE  
+                  __end_of_main 01FE         __end_of_TMR2_Initialize 01BD                  __CFG_LPBOR$OFF 0000  
+                        ??_main 0044                          _OSCCON 0010                  __CFG_PWRTE$OFF 0000  
+                _PWM_Initialize 01AA        ADC_GetConversion@channel 0041         __end_of_TMR2_StartTimer 01A7  
+             _SYSTEM_Initialize 01B2         __end_of__initialization 01FE              ?_SYSTEM_Initialize 0040  
+        __end_of_PWM_Initialize 01AD                  __pcstackCOMMON 0000             ??_SYSTEM_Initialize 0000  
+              ?_TMR2_Initialize 0040       __end_of_SYSTEM_Initialize 01B7                 ?_PWM_Initialize 0040  
+                    __pmaintext 01E5         __size_of_ADC_Initialize 0005                         _PWM1DCH 0015  
+                       _PWM1DCL 0014                         _PWM1CON 0016                ?_TMR2_StartTimer 0040  
+                     _ADCONbits 001F                         __ptext1 01A5                         __ptext2 01B2  
+                       __ptext3 01B7                         __ptext4 01AA                         __ptext5 01A7  
+                       __ptext6 01AD                         __ptext7 01CD                         __ptext8 01BD  
+         _OSCILLATOR_Initialize 01A7                       _T2CONbits 0013      __size_of_SYSTEM_Initialize 0005  
+          end_of_initialization 01FE                __CFG_FOSC$INTOSC 0000                       _TRISAbits 0006  
+             _PWM_LoadDutyValue 01CD              ?_PWM_LoadDutyValue 0040             ??_PWM_LoadDutyValue 0042  
+                _ADC_Initialize 01AD          ?_OSCILLATOR_Initialize 0040             start_initialization 01FE  
+     __end_of_PWM_LoadDutyValue 01E5                ??_PWM_Initialize 0000          __end_of_ADC_Initialize 01B2  
+                     ___latbits 0000                   __pcstackBANK0 0040        __size_of_TMR2_Initialize 0006  
+                     __pnvBANK0 0046                 ?_ADC_Initialize 0040      __size_of_PWM_LoadDutyValue 0018  
+                     _dutycycle 0046                        _LATAbits 0007        __size_of_TMR2_StartTimer 0002  
+                      _PIR1bits 000C               ??_TMR2_Initialize 0000      PWM_LoadDutyValue@dutyValue 0040  
+             _ADC_GetConversion 01BD         ??_OSCILLATOR_Initialize 0000              ?_ADC_GetConversion 0040  
+                    _ANSELAbits 0008             ??_ADC_GetConversion 0040                   __size_of_main 0019  
+     __end_of_ADC_GetConversion 01CD               ??_TMR2_StartTimer 0000                ??_ADC_Initialize 0000  
+    __size_of_ADC_GetConversion 0010  
