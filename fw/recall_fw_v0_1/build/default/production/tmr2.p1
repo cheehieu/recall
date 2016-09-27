@@ -1398,49 +1398,49 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr2.c: 25: {
 [e :U _TMR2_Initialize ]
 [f ]
-[; ;tmr2.c: 30: T2CON = 0xF7;
-"30
+[; ;tmr2.c: 27: T2CON = 0xF7;
+"27
 [e = _T2CON -> -> 247 `i `uc ]
-[; ;tmr2.c: 34: PR2 = 0x08;
-"34
+[; ;tmr2.c: 33: PR2 = 0x08;
+"33
 [e = _PR2 -> -> 8 `i `uc ]
-[; ;tmr2.c: 41: TMR2 = 0x00;
-"41
+[; ;tmr2.c: 37: TMR2 = 0x00;
+"37
 [e = _TMR2 -> -> 0 `i `uc ]
-[; ;tmr2.c: 44: PIR1bits.TMR2IF = 0;
-"44
+[; ;tmr2.c: 40: PIR1bits.TMR2IF = 0;
+"40
 [e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
-[; ;tmr2.c: 45: }
-"45
+[; ;tmr2.c: 41: }
+"41
 [e :UE 144 ]
 }
-"47
+"43
 [v _TMR2_StartTimer `(v ~T0 @X0 1 ef ]
-"48
+"44
 {
-[; ;tmr2.c: 47: void TMR2_StartTimer(void)
-[; ;tmr2.c: 48: {
+[; ;tmr2.c: 43: void TMR2_StartTimer(void)
+[; ;tmr2.c: 44: {
 [e :U _TMR2_StartTimer ]
 [f ]
-[; ;tmr2.c: 50: T2CONbits.TMR2ON = 1;
-"50
+[; ;tmr2.c: 46: T2CONbits.TMR2ON = 1;
+"46
 [e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
-[; ;tmr2.c: 51: }
-"51
+[; ;tmr2.c: 47: }
+"47
 [e :UE 145 ]
 }
-"53
+"49
 [v _TMR2_StopTimer `(v ~T0 @X0 1 ef ]
-"54
+"50
 {
-[; ;tmr2.c: 53: void TMR2_StopTimer(void)
-[; ;tmr2.c: 54: {
+[; ;tmr2.c: 49: void TMR2_StopTimer(void)
+[; ;tmr2.c: 50: {
 [e :U _TMR2_StopTimer ]
 [f ]
-[; ;tmr2.c: 56: T2CONbits.TMR2ON = 0;
-"56
+[; ;tmr2.c: 52: T2CONbits.TMR2ON = 0;
+"52
 [e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
-[; ;tmr2.c: 57: }
-"57
+[; ;tmr2.c: 53: }
+"53
 [e :UE 146 ]
 }

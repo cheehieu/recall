@@ -43,7 +43,6 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 #include "device_initialize.h"
 
-//uint16_t dutycycle; // define variable - unsigned integer
 uint8_t led_state = 0;  ///0:off, 1:on/blinking
 
 // Main application
@@ -51,50 +50,34 @@ void main(void)
 {
     SYSTEM_Initialize();    // Initialize the device
     
-    //set weak pull on RA0, configure for input
-
-//    TRISAbits.TRISA0 = 0;   // Set Channel RA0 as output
-//    TRISAbits.TRISA1 = 0;   // Set Channel RA1 as output
-//    LATAbits.LATA0 = 0;     // Set RA0 (LED D0) high
-//    LATAbits.LATA1 = 0;     // Set RA1 (LED D1) high
-    
+    //Configure RA0 for button
     TRISAbits.TRISA0 = 1;   // Set Channel RA0 as input
     WPUAbits.WPUA0 = 1;     // Enable weak pull up
+    ANSELAbits.ANSA0 = 0;   //Digital I/O
     OPTION_REGbits.nWPUEN = 0;  //Clear weak pull enable
-    ANSELAbits.ANSA0 = 0;       //Digial I/O
-    
+    IOCANbits.IOCAN0 = 1;       //Enable interrupt on negative edge
+    IOCAPbits.IOCAP0 = 0;       //Disable interrupt on positive edge
+    INTCONbits.IOCIE = 1;       //Enable IOC interrupt
+            
+    //Configure RA2 for LED
     TRISAbits.TRISA2 = 0;   // Set Channel RA2 as output
     LATAbits.LATA2 = 0;     // Set RA2 (LED D1) high
-    
-    // Set Channel RA0 as input (SW)
-    // Set Channel RA1 as output (D1)
-    // Set Channel RA2 as timer
-    
-//    MR2_StartTimer();
 
     while (1)
     {
-        //trigger on interrupt instead of IO value
-//        if(PORTAbits.RA0 == 0)
-//        {
-//            led_state = 1;
-//            LATAbits.LATA2 = 1;
-//        }
-//        else if (PORTAbits.RA0 == 1)
-//        {
-//            led_state = 0;
-//            LATAbits.LATA2 = 0;
-//        }
-        
-        
-        if(PORTAbits.RA0==0 && led_state==0) {
-            TMR2_StartTimer();
+        //TEST CODE FOR BLINKING LED
+        if(IOCAFbits.IOCAF0==1 && led_state==0) {
+            IOCAFbits.IOCAF0 = 0; //clear IOC flag
             led_state = 1;
+            TMR2_StartTimer();
+            LATAbits.LATA2 = 1;
+            //debouncing timer?
         }
-        else if (PORTAbits.RA0==0 && led_state==1) {
+        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
+            IOCAFbits.IOCAF0 = 0; //clear IOC flag
+            led_state = 0;
             TMR2_StopTimer();
             LATAbits.LATA2 = 0;
-            led_state = 0;
         }
         
         //blink LED
@@ -114,6 +97,40 @@ void main(void)
             TMR2 = 0x00;
             PIR1bits.TMR2IF = 0;
         }
+        //TEST CODE FOR BLINKING LED
+        
+        
+        
+//        //TEST CODE FOR BASIC ON/OFF
+//        if(IOCAFbits.IOCAF0==1 && led_state==0) {
+//            LATAbits.LATA2 = 1;
+//            
+////            //delay for button debounce
+////            TMR2_StartTimer();
+////            if(PIR1bits.TMR2IF == 1)
+////            {
+//                IOCAFbits.IOCAF0 = 0; //clear IOC flag
+//                led_state = 1;
+////                TMR2 = 0x00;
+////                PIR1bits.TMR2IF = 0;
+////                TMR2_StopTimer();
+////            }
+//        }
+//        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
+//            LATAbits.LATA2 = 0;
+//            
+////            //delay for button debounce
+////            TMR2_StartTimer();
+////            if(PIR1bits.TMR2IF == 1)
+////            {
+//                IOCAFbits.IOCAF0 = 0; //clear IOC flag
+//                led_state = 0;
+////                TMR2 = 0x00;
+////                PIR1bits.TMR2IF = 0;
+////                TMR2_StopTimer();
+////            }
+//        }
+//        //TEST CODE FOR BASIC ON/OFF
     }
 }
 // End of File

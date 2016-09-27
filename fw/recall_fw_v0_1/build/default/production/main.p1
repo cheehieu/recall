@@ -18,6 +18,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S13 . . ]
 "294
 [v _WPUAbits `VS13 ~T0 @X0 0 e@9 ]
+"256
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . ANSA0 ANSA1 ANSA2 ]
+"255
+[u S11 `S12 1 ]
+[n S11 . . ]
+"262
+[v _ANSELAbits `VS11 ~T0 @X0 0 e@8 ]
 "484
 [s S24 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S24 . PS PSA T0SE T0CS INTEDG nWPUEN ]
@@ -29,14 +37,30 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S23 . . . ]
 "498
 [v _OPTION_REGbits `VS23 ~T0 @X0 0 e@14 ]
-"256
-[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S12 . ANSA0 ANSA1 ANSA2 ]
-"255
-[u S11 `S12 1 ]
-[n S11 . . ]
-"262
-[v _ANSELAbits `VS11 ~T0 @X0 0 e@8 ]
+"1114
+[s S57 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S57 . IOCAN0 IOCAN1 IOCAN2 IOCAN3 ]
+"1113
+[u S56 `S57 1 ]
+[n S56 . . ]
+"1121
+[v _IOCANbits `VS56 ~T0 @X0 0 e@27 ]
+"1077
+[s S55 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S55 . IOCAP0 IOCAP1 IOCAP2 IOCAP3 ]
+"1076
+[u S54 `S55 1 ]
+[n S54 . . ]
+"1084
+[v _IOCAPbits `VS54 ~T0 @X0 0 e@26 ]
+"343
+[s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S18 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"342
+[u S17 `S18 1 ]
+[n S17 . . ]
+"354
+[v _INTCONbits `VS17 ~T0 @X0 0 e@11 ]
 "225
 [s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S10 . LATA0 LATA1 LATA2 ]
@@ -45,17 +69,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S9 . . ]
 "231
 [v _LATAbits `VS9 ~T0 @X0 0 e@7 ]
-"157
-[s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S6 . RA0 RA1 RA2 RA3 ]
-"156
-[u S5 `S6 1 ]
-[n S5 . . ]
-"164
-[v _PORTAbits `VS5 ~T0 @X0 0 e@5 ]
+"1151
+[s S59 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S59 . IOCAF0 IOCAF1 IOCAF2 IOCAF3 ]
+"1150
+[u S58 `S59 1 ]
+[n S58 . . ]
+"1158
+[v _IOCAFbits `VS58 ~T0 @X0 0 e@28 ]
 "98 tmr2.h
 [v _TMR2_StartTimer `(v ~T0 @X0 0 ef ]
-"95 main.c
+"79 main.c
 [v _TMR2_StopTimer `(i ~T0 @X0 0 ef ]
 "404 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic10lf320.h
 [s S20 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1448,130 +1472,148 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr2.h: 98: void TMR2_StartTimer(void);
 [; ;device_initialize.h: 38: void SYSTEM_Initialize(void);
 [; ;device_initialize.h: 50: void OSCILLATOR_Initialize(void);
-"47 main.c
+"46 main.c
 [v _led_state `uc ~T0 @X0 1 e ]
 [i _led_state
 -> -> 0 `i `uc
 ]
-[; ;main.c: 47: uint8_t led_state = 0;
-"50
+[; ;main.c: 46: uint8_t led_state = 0;
+"49
 [v _main `(v ~T0 @X0 1 ef ]
-"51
+"50
 {
-[; ;main.c: 50: void main(void)
-[; ;main.c: 51: {
+[; ;main.c: 49: void main(void)
+[; ;main.c: 50: {
 [e :U _main ]
 [f ]
-[; ;main.c: 52: SYSTEM_Initialize();
-"52
+[; ;main.c: 51: SYSTEM_Initialize();
+"51
 [e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 61: TRISAbits.TRISA0 = 1;
-"61
+[; ;main.c: 54: TRISAbits.TRISA0 = 1;
+"54
 [e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 62: WPUAbits.WPUA0 = 1;
-"62
+[; ;main.c: 55: WPUAbits.WPUA0 = 1;
+"55
 [e = . . _WPUAbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 63: OPTION_REGbits.nWPUEN = 0;
-"63
-[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 64: ANSELAbits.ANSA0 = 0;
-"64
+[; ;main.c: 56: ANSELAbits.ANSA0 = 0;
+"56
 [e = . . _ANSELAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 66: TRISAbits.TRISA2 = 0;
-"66
+[; ;main.c: 57: OPTION_REGbits.nWPUEN = 0;
+"57
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 58: IOCANbits.IOCAN0 = 1;
+"58
+[e = . . _IOCANbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 59: IOCAPbits.IOCAP0 = 0;
+"59
+[e = . . _IOCAPbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 60: INTCONbits.IOCIE = 1;
+"60
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 63: TRISAbits.TRISA2 = 0;
+"63
 [e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 67: LATAbits.LATA2 = 0;
-"67
+[; ;main.c: 64: LATAbits.LATA2 = 0;
+"64
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 75: while (1)
-"75
+[; ;main.c: 66: while (1)
+"66
 [e :U 146 ]
-[; ;main.c: 76: {
-"76
+[; ;main.c: 67: {
+"67
 {
-[; ;main.c: 90: if(PORTAbits.RA0==0 && led_state==0) {
-"90
-[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i == -> _led_state `i -> 0 `i 148  ]
+[; ;main.c: 69: if(IOCAFbits.IOCAF0==1 && led_state==0) {
+"69
+[e $ ! && == -> . . _IOCAFbits 0 0 `i -> 1 `i == -> _led_state `i -> 0 `i 148  ]
 {
-[; ;main.c: 91: TMR2_StartTimer();
-"91
-[e ( _TMR2_StartTimer ..  ]
-[; ;main.c: 92: led_state = 1;
-"92
+[; ;main.c: 70: IOCAFbits.IOCAF0 = 0;
+"70
+[e = . . _IOCAFbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 71: led_state = 1;
+"71
 [e = _led_state -> -> 1 `i `uc ]
-"93
+[; ;main.c: 72: TMR2_StartTimer();
+"72
+[e ( _TMR2_StartTimer ..  ]
+[; ;main.c: 73: LATAbits.LATA2 = 1;
+"73
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+"75
 }
-[; ;main.c: 93: }
+[; ;main.c: 75: }
 [e $U 149  ]
-"94
+"76
 [e :U 148 ]
-[; ;main.c: 94: else if (PORTAbits.RA0==0 && led_state==1) {
-[e $ ! && == -> . . _PORTAbits 0 0 `i -> 0 `i == -> _led_state `i -> 1 `i 150  ]
+[; ;main.c: 76: else if (IOCAFbits.IOCAF0==1 && led_state==1) {
+[e $ ! && == -> . . _IOCAFbits 0 0 `i -> 1 `i == -> _led_state `i -> 1 `i 150  ]
 {
-[; ;main.c: 95: TMR2_StopTimer();
-"95
-[e ( _TMR2_StopTimer ..  ]
-[; ;main.c: 96: LATAbits.LATA2 = 0;
-"96
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 97: led_state = 0;
-"97
+[; ;main.c: 77: IOCAFbits.IOCAF0 = 0;
+"77
+[e = . . _IOCAFbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 78: led_state = 0;
+"78
 [e = _led_state -> -> 0 `i `uc ]
-"98
+[; ;main.c: 79: TMR2_StopTimer();
+"79
+[e ( _TMR2_StopTimer ..  ]
+[; ;main.c: 80: LATAbits.LATA2 = 0;
+"80
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+"81
 }
 [e :U 150 ]
-"101
+"84
 [e :U 149 ]
-[; ;main.c: 98: }
-[; ;main.c: 101: if(PIR1bits.TMR2IF == 1)
+[; ;main.c: 81: }
+[; ;main.c: 84: if(PIR1bits.TMR2IF == 1)
 [e $ ! == -> . . _PIR1bits 0 1 `i -> 1 `i 151  ]
-[; ;main.c: 102: {
-"102
+[; ;main.c: 85: {
+"85
 {
-[; ;main.c: 104: if (LATAbits.LATA2 == 0)
-"104
+[; ;main.c: 87: if (LATAbits.LATA2 == 0)
+"87
 [e $ ! == -> . . _LATAbits 0 2 `i -> 0 `i 152  ]
-[; ;main.c: 105: {
-"105
+[; ;main.c: 88: {
+"88
 {
-[; ;main.c: 106: LATAbits.LATA2 = 1;
-"106
+[; ;main.c: 89: LATAbits.LATA2 = 1;
+"89
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-"107
+"90
 }
-[; ;main.c: 107: }
+[; ;main.c: 90: }
 [e $U 153  ]
-"108
+"91
 [e :U 152 ]
-[; ;main.c: 108: else
-[; ;main.c: 109: {
-"109
+[; ;main.c: 91: else
+[; ;main.c: 92: {
+"92
 {
-[; ;main.c: 110: LATAbits.LATA2 = 0;
-"110
+[; ;main.c: 93: LATAbits.LATA2 = 0;
+"93
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-"111
+"94
 }
 [e :U 153 ]
-[; ;main.c: 111: }
-[; ;main.c: 114: TMR2 = 0x00;
-"114
+[; ;main.c: 94: }
+[; ;main.c: 97: TMR2 = 0x00;
+"97
 [e = _TMR2 -> -> 0 `i `uc ]
-[; ;main.c: 115: PIR1bits.TMR2IF = 0;
-"115
+[; ;main.c: 98: PIR1bits.TMR2IF = 0;
+"98
 [e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
-"116
+"99
 }
 [e :U 151 ]
-"117
+"134
 }
 [e :U 145 ]
-"75
+"66
 [e $U 146  ]
 [e :U 147 ]
-[; ;main.c: 116: }
-[; ;main.c: 117: }
-[; ;main.c: 118: }
-"118
+[; ;main.c: 99: }
+[; ;main.c: 134: }
+[; ;main.c: 135: }
+"135
 [e :UE 144 ]
 }

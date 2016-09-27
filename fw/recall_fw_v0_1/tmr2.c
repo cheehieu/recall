@@ -23,19 +23,15 @@
 
 void TMR2_Initialize(void)
 {
-    // TMR2ON off; T2CKPS 1:1; T2OUTPS 1:1;
-//    T2CON = 0x00;
-    
     // TOUTPS 1:16; TMR2ON off; T2CKPS 1:64;
     T2CON = 0xF7;
-
-    // PR2 255;
-//    PR2 = 0xFF;
-    PR2 = 0x08;
-    
+  
+    //31kHz LFINTOSC
     //0x08 = ~1 second
     //0x20 = ~4 seconds
     //0xFF = ~32 seconds
+    PR2 = 0x08;
+//    PR2 = 0x03; //shorter for button debounce
 
     // TMR2 0x00;
     TMR2 = 0x00;

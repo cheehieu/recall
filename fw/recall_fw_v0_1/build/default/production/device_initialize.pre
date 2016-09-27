@@ -2003,15 +2003,11 @@ void OSCILLATOR_Initialize(void);
 void SYSTEM_Initialize(void)
 {
 OSCILLATOR_Initialize();
-
-
 TMR2_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
-
-
 OSCCON = 0x00;
 }
 

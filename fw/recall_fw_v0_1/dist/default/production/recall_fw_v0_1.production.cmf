@@ -13,14 +13,14 @@
 %PSECTS
 $dist/default/production\recall_fw_v0_1.production.obj
 cinit CODE 0 1 1 3 2
-text1 CODE 0 30 30 2 2
-text2 CODE 0 32 32 2 2
-text3 CODE 0 2D 2D 3 2
-text4 CODE 0 26 26 7 2
-text5 CODE 0 34 34 2 2
-maintext CODE 0 4 4 22 2
+text1 CODE 0 36 36 2 2
+text2 CODE 0 38 38 2 2
+text3 CODE 0 33 33 3 2
+text4 CODE 0 2C 2C 7 2
+text5 CODE 0 3A 3A 2 2
+maintext CODE 0 4 4 28 2
 bssBANK0 BANK0 1 40 40 1 1
-$C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+$C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 end_init CODE 0 0 0 1 2
 config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
@@ -31,14 +31,14 @@ config CONFIG 0 2007 2007 1 2
 %UNUSED
 RAM 41-7D 1
 BANK0 41-7D 1
-CONST 36-FF 2
-ENTRY 36-FF 2
+CONST 3C-FF 2
+ENTRY 3C-FF 2
 IDLOC 2000-2003 2
 STACK 41-7D 1
-CODE 36-FF 2
+CODE 3C-FF 2
 SFR0 0-3F 1
-STRCODE 36-FF 2
-STRING 36-FF 2
+STRCODE 3C-FF 2
+STRING 3C-FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -53,56 +53,62 @@ STRING 36-FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\recall_fw_v0_1.production.obj
-1 cinit CODE >800:C:\Users\Hieu\AppData\Local\Temp\sa18.
-1 cinit CODE >803:C:\Users\Hieu\AppData\Local\Temp\sa18.
-1 cinit CODE >814:C:\Users\Hieu\AppData\Local\Temp\sa18.
-2 cinit CODE >820:C:\Users\Hieu\AppData\Local\Temp\sa18.
-2 cinit CODE >822:C:\Users\Hieu\AppData\Local\Temp\sa18.
-3 cinit CODE >823:C:\Users\Hieu\AppData\Local\Temp\sa18.
-34 text5 CODE >41:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-34 text5 CODE >45:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-35 text5 CODE >46:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-26 text4 CODE >24:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-26 text4 CODE >30:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-28 text4 CODE >34:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-2A text4 CODE >41:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-2B text4 CODE >44:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-2C text4 CODE >45:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-2D text3 CODE >33:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-2D text3 CODE >35:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-2E text3 CODE >38:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-2F text3 CODE >39:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
-32 text2 CODE >47:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-32 text2 CODE >50:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-33 text2 CODE >51:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-30 text1 CODE >53:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-30 text1 CODE >56:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-31 text1 CODE >57:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
-4 maintext CODE >50:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-4 maintext CODE >52:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-5 maintext CODE >61:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-6 maintext CODE >62:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-7 maintext CODE >63:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-8 maintext CODE >64:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-9 maintext CODE >66:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-A maintext CODE >67:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-B maintext CODE >90:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-10 maintext CODE >91:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-11 maintext CODE >92:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-13 maintext CODE >93:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-14 maintext CODE >94:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-19 maintext CODE >95:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-1A maintext CODE >96:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-1B maintext CODE >97:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-1C maintext CODE >101:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-1E maintext CODE >104:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-20 maintext CODE >106:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-21 maintext CODE >107:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-22 maintext CODE >108:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-22 maintext CODE >110:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-23 maintext CODE >114:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-24 maintext CODE >115:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
-25 maintext CODE >75:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+1 cinit CODE >806:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+1 cinit CODE >809:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+1 cinit CODE >820:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+2 cinit CODE >826:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+2 cinit CODE >828:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+3 cinit CODE >829:C:\Users\Hieu\AppData\Local\Temp\sgp0.
+3A text5 CODE >39:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+3A text5 CODE >41:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+3B text5 CODE >42:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+2C text4 CODE >24:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+2C text4 CODE >27:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+2E text4 CODE >33:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+30 text4 CODE >37:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+31 text4 CODE >40:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+32 text4 CODE >41:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+33 text3 CODE >33:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+33 text3 CODE >35:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+34 text3 CODE >36:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+35 text3 CODE >37:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\device_initialize.c
+38 text2 CODE >43:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+38 text2 CODE >46:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+39 text2 CODE >47:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+36 text1 CODE >49:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+36 text1 CODE >52:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+37 text1 CODE >53:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\tmr2.c
+4 maintext CODE >49:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+4 maintext CODE >51:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+5 maintext CODE >54:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+6 maintext CODE >55:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+7 maintext CODE >56:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+8 maintext CODE >57:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+9 maintext CODE >58:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+A maintext CODE >59:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+B maintext CODE >60:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+C maintext CODE >63:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+D maintext CODE >64:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+E maintext CODE >69:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+13 maintext CODE >70:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+14 maintext CODE >71:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+16 maintext CODE >72:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+17 maintext CODE >73:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+18 maintext CODE >75:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+19 maintext CODE >76:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+1E maintext CODE >77:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+1F maintext CODE >78:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+20 maintext CODE >79:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+21 maintext CODE >80:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+22 maintext CODE >84:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+24 maintext CODE >87:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+26 maintext CODE >89:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+27 maintext CODE >90:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+28 maintext CODE >91:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+28 maintext CODE >93:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+29 maintext CODE >97:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+2A maintext CODE >98:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
+2B maintext CODE >66:C:\Users\Hieu\Documents\GitHub\recall\fw\recall_fw_v0_1\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -132,32 +138,32 @@ ltemp2 86 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ltemp3 80 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _TMR2 11 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+___sp 0 0 STACK 2 stack C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 _main 8 0 CODE 0 maintext dist/default/production\recall_fw_v0_1.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-start 0 0 CODE 0 init C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+start 0 0 CODE 0 init C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 ttemp 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 _OPTION_REGbits E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-__end_of_TMR2_StopTimer 64 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
+__end_of_TMR2_StopTimer 70 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-_TMR2_Initialize 4C 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
-_TMR2_StartTimer 64 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
+_TMR2_Initialize 58 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
+_TMR2_StartTimer 70 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
 ttemp0 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ttemp1 81 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ttemp2 84 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ttemp3 87 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 ttemp4 7F 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 wtemp1 80 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 wtemp2 82 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
@@ -174,9 +180,9 @@ _WPUAbits 9 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 start_initialization 2 0 CODE 0 cinit dist/default/production\recall_fw_v0_1.production.obj
 _OSCCON 10 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 _TRISAbits 6 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-__end_of_SYSTEM_Initialize 60 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
+__end_of_SYSTEM_Initialize 6C 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
 __pcstackBANK0 0 0 BANK0 1 cstackBANK0 dist/default/production\recall_fw_v0_1.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hcinit 8 0 CODE 0 cinit -
 __Hidloc 0 0 IDLOC 0 idloc -
@@ -190,7 +196,7 @@ __Lbank0 0 0 ABS 0 bank0 -
 __Lcinit 2 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 __Lstack 0 0 STACK 2 stack -
-_PORTAbits 5 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 0 0 CODE 0 init -
@@ -208,10 +214,13 @@ __S0 2008 0 ABS 0 - -
 __S1 41 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __size_of_TMR2_StopTimer 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-_SYSTEM_Initialize 5A 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
+_SYSTEM_Initialize 66 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
+_IOCAFbits 1C 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
+_IOCANbits 1B 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
+_IOCAPbits 1A 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __pmaintext 8 0 CODE 0 maintext dist/default/production\recall_fw_v0_1.production.obj
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __Lcommon 0 0 ABS 0 common -
@@ -219,8 +228,8 @@ __Lconfig 400E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 _LATAbits 7 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-stackhi 0 0 ABS 0 - C:\Users\Hieu\AppData\Local\Temp\sa18.obj
-stacklo 0 0 ABS 0 - C:\Users\Hieu\AppData\Local\Temp\sa18.obj
+stackhi 0 0 ABS 0 - C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+stacklo 0 0 ABS 0 - C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -235,11 +244,11 @@ __Hintentry 0 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 60 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
-__ptext2 64 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
-__ptext3 5A 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
-__ptext4 4C 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
-__ptext5 68 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
+__ptext1 6C 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
+__ptext2 70 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
+__ptext3 66 0 CODE 0 text3 dist/default/production\recall_fw_v0_1.production.obj
+__ptext4 58 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
+__ptext5 74 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -249,24 +258,24 @@ __Lfunctab 0 0 CODE 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\recall_fw_v0_1.production.obj
 __Hend_init 2 0 CODE 0 end_init -
-__end_of_main 4C 0 CODE 0 maintext dist/default/production\recall_fw_v0_1.production.obj
+__end_of_main 58 0 CODE 0 maintext dist/default/production\recall_fw_v0_1.production.obj
 _ADCON 1F 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 _ADRES 1E 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 _T2CON 13 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 _ADCONbits 1F 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-__end_of_OSCILLATOR_Initialize 6C 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
+__end_of_OSCILLATOR_Initialize 78 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
 __initialization 2 0 CODE 0 cinit dist/default/production\recall_fw_v0_1.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __pbssBANK0 40 0 BANK0 1 bssBANK0 dist/default/production\recall_fw_v0_1.production.obj
 _T2CONbits 13 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-_TMR2_StopTimer 60 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
+_TMR2_StopTimer 6C 0 CODE 0 text1 dist/default/production\recall_fw_v0_1.production.obj
 _ANSELAbits 8 0 ABS 0 - dist/default/production\recall_fw_v0_1.production.obj
-_OSCILLATOR_Initialize 68 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
-__end_of_TMR2_Initialize 5A 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
-__end_of_TMR2_StartTimer 68 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
+_OSCILLATOR_Initialize 74 0 CODE 0 text5 dist/default/production\recall_fw_v0_1.production.obj
+__end_of_TMR2_Initialize 66 0 CODE 0 text4 dist/default/production\recall_fw_v0_1.production.obj
+__end_of_TMR2_StartTimer 74 0 CODE 0 text2 dist/default/production\recall_fw_v0_1.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -292,6 +301,6 @@ __end_of_TMR2_StartTimer 68 0 CODE 0 text2 dist/default/production\recall_fw_v0_
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-reset_vec 0 0 0 36 2
+reset_vec 0 0 0 3C 2
 bssBANK0 1 40 40 1 1
 config 0 2007 400E 1 2

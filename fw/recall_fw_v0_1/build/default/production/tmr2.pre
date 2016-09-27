@@ -1959,16 +1959,13 @@ void TMR2_StartTimer(void);
 void TMR2_Initialize(void)
 {
 
-
-
-
 T2CON = 0xF7;
 
-
-
+# 33
 PR2 = 0x08;
 
-# 41
+
+
 TMR2 = 0x00;
 
 

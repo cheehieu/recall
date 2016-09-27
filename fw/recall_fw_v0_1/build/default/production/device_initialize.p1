@@ -1417,25 +1417,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;device_initialize.c: 35: OSCILLATOR_Initialize();
 "35
 [e ( _OSCILLATOR_Initialize ..  ]
-[; ;device_initialize.c: 38: TMR2_Initialize();
-"38
+[; ;device_initialize.c: 36: TMR2_Initialize();
+"36
 [e ( _TMR2_Initialize ..  ]
-[; ;device_initialize.c: 39: }
-"39
+[; ;device_initialize.c: 37: }
+"37
 [e :UE 144 ]
 }
-"41
+"39
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"42
+"40
 {
-[; ;device_initialize.c: 41: void OSCILLATOR_Initialize(void)
-[; ;device_initialize.c: 42: {
+[; ;device_initialize.c: 39: void OSCILLATOR_Initialize(void)
+[; ;device_initialize.c: 40: {
 [e :U _OSCILLATOR_Initialize ]
 [f ]
-[; ;device_initialize.c: 45: OSCCON = 0x00;
-"45
+[; ;device_initialize.c: 41: OSCCON = 0x00;
+"41
 [e = _OSCCON -> -> 0 `i `uc ]
-[; ;device_initialize.c: 46: }
-"46
+[; ;device_initialize.c: 42: }
+"42
 [e :UE 145 ]
 }
