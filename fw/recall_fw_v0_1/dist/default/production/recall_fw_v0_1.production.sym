@@ -159,7 +159,7 @@ config 400E 400F CONFIG 400E 0
 bssBANK0 40 40 BANK0 40 1
 %locals
 dist/default/production\recall_fw_v0_1.production.obj
-C:\Users\Hieu\AppData\Local\Temp\sgp0.
+C:\Users\Hieu\AppData\Local\Temp\sf8o.
 806 1 0 CODE 0
 809 1 0 CODE 0
 820 1 0 CODE 0

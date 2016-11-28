@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.38\dat\en_msgs.txt -cs \
   -h+dist/default/production\recall_fw_v0_1.production.sym \
   --cmf=dist/default/production\recall_fw_v0_1.production.cmf -z -Q10LF320 \
-  -oC:\Users\Hieu\AppData\Local\Temp\sgp0.2 \
+  -oC:\Users\Hieu\AppData\Local\Temp\sf8o.2 \
   -Mdist/default/production/recall_fw_v0_1.production.map -E1 -ver=XC8 \
   -ASTACK=041h-07dh -pstack=STACK -ACODE=00h-0FFh -ASTRCODE=00h-0FFh \
   -ASTRING=00h-0FFh -ACONST=00h-0FFh -AENTRY=00h-0FFh -ABANK0=040h-07Dh \
@@ -14,7 +14,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
   -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Hieu\AppData\Local\Temp\sgp0.obj \
+  C:\Users\Hieu\AppData\Local\Temp\sf8o.obj \
   dist/default/production\recall_fw_v0_1.production.obj 
 
 Object code version is 3.11
@@ -24,7 +24,7 @@ Machine type is 10LF320
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Hieu\AppData\Local\Temp\sgp0.obj
+C:\Users\Hieu\AppData\Local\Temp\sf8o.obj
                 end_init                              0        0        1        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\recall_fw_v0_1.production.obj

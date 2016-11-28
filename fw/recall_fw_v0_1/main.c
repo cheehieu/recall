@@ -66,71 +66,71 @@ void main(void)
     while (1)
     {
         //TEST CODE FOR BLINKING LED
-        if(IOCAFbits.IOCAF0==1 && led_state==0) {
-            IOCAFbits.IOCAF0 = 0; //clear IOC flag
-            led_state = 1;
-            TMR2_StartTimer();
-            LATAbits.LATA2 = 1;
-            //debouncing timer?
-        }
-        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
-            IOCAFbits.IOCAF0 = 0; //clear IOC flag
-            led_state = 0;
-            TMR2_StopTimer();
-            LATAbits.LATA2 = 0;
-        }
-        
-        //blink LED
-        if(PIR1bits.TMR2IF == 1)
-        {
-            //toggle LED
-            if (LATAbits.LATA2 == 0)
-            {
-                LATAbits.LATA2 = 1;
-            }
-            else
-            {
-                LATAbits.LATA2 = 0;
-            }
-            
-            //reset timer2
-            TMR2 = 0x00;
-            PIR1bits.TMR2IF = 0;
-        }
+//        if(IOCAFbits.IOCAF0==1 && led_state==0) {
+//            IOCAFbits.IOCAF0 = 0; //clear IOC flag
+//            led_state = 1;
+//            TMR2_StartTimer();
+//            LATAbits.LATA2 = 1;
+//            //debouncing timer?
+//        }
+//        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
+//            IOCAFbits.IOCAF0 = 0; //clear IOC flag
+//            led_state = 0;
+//            TMR2_StopTimer();
+//            LATAbits.LATA2 = 0;
+//        }
+//        
+//        //blink LED
+//        if(PIR1bits.TMR2IF == 1)
+//        {
+//            //toggle LED
+//            if (LATAbits.LATA2 == 0)
+//            {
+//                LATAbits.LATA2 = 1;
+//            }
+//            else
+//            {
+//                LATAbits.LATA2 = 0;
+//            }
+//            
+//            //reset timer2
+//            TMR2 = 0x00;
+//            PIR1bits.TMR2IF = 0;
+//        }
         //TEST CODE FOR BLINKING LED
         
         
         
-//        //TEST CODE FOR BASIC ON/OFF
-//        if(IOCAFbits.IOCAF0==1 && led_state==0) {
-//            LATAbits.LATA2 = 1;
-//            
-////            //delay for button debounce
-////            TMR2_StartTimer();
-////            if(PIR1bits.TMR2IF == 1)
-////            {
-//                IOCAFbits.IOCAF0 = 0; //clear IOC flag
-//                led_state = 1;
-////                TMR2 = 0x00;
-////                PIR1bits.TMR2IF = 0;
-////                TMR2_StopTimer();
-////            }
-//        }
-//        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
-//            LATAbits.LATA2 = 0;
-//            
-////            //delay for button debounce
-////            TMR2_StartTimer();
-////            if(PIR1bits.TMR2IF == 1)
-////            {
-//                IOCAFbits.IOCAF0 = 0; //clear IOC flag
-//                led_state = 0;
-////                TMR2 = 0x00;
-////                PIR1bits.TMR2IF = 0;
-////                TMR2_StopTimer();
-////            }
-//        }
-//        //TEST CODE FOR BASIC ON/OFF
+        //TEST CODE FOR BASIC ON/OFF
+        if(IOCAFbits.IOCAF0==1 && led_state==0) {
+            LATAbits.LATA2 = 1;
+            
+//            //delay for button debounce
+//            TMR2_StartTimer();
+//            if(PIR1bits.TMR2IF == 1)
+//            {
+                IOCAFbits.IOCAF0 = 0; //clear IOC flag
+                led_state = 1;
+//                TMR2 = 0x00;
+//                PIR1bits.TMR2IF = 0;
+//                TMR2_StopTimer();
+//            }
+        }
+        else if (IOCAFbits.IOCAF0==1 && led_state==1) {
+            LATAbits.LATA2 = 0;
+            
+//            //delay for button debounce
+//            TMR2_StartTimer();
+//            if(PIR1bits.TMR2IF == 1)
+//            {
+                IOCAFbits.IOCAF0 = 0; //clear IOC flag
+                led_state = 0;
+//                TMR2 = 0x00;
+//                PIR1bits.TMR2IF = 0;
+//                TMR2_StopTimer();
+//            }
+        }
+        //TEST CODE FOR BASIC ON/OFF
     }
 }
 // End of File
